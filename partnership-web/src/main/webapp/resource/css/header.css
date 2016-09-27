@@ -1,0 +1,79 @@
+header{
+    margin: 0;
+    padding: 1em;
+    overflow: auto;
+}
+
+header .logo{
+    
+}
+header .logo h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+header #header-login{
+    display: inline;
+}
+header #header-login .login{
+    box-shadow: 1px 2px 2px 2px #aaa;
+}
+header #header-login .register{
+    margin-left: 1.2em;
+    box-shadow: 1px 2px 2px 2px #aaa;
+}
+header #header-login #lang{
+    
+}
+header #header-login #lang #flag{
+    width: 60px;
+    height: 35px;
+    background-image: url(/resource/images/home-page/vnlang.png);
+    background-size: 61px 36px;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 2px 2px #aaa; 
+    border: none;
+    position: relative;
+    
+}
+header #header-login #lang #flag:after{
+    content: "";
+    position: absolute;
+    
+/*
+    margin-left: -30px;
+    margin-top: -5px;
+*/
+    width: 0px;
+    height: 0px;
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    background-color: #FF5F57;
+    opacity: 0.5;
+    box-sizing: border-box;
+    border-radius: 5%;
+/*
+    transition: all 800ms ease;
+    -webkit-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+*/
+}
+header #header-login #lang #flag:hover:after{
+    width: 60px;
+    height: 35px;
+    opacity: 0.2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: none;
+    margin-left: 0;
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    
+}

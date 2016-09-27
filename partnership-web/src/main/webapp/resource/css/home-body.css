@@ -1,0 +1,138 @@
+/*Css Content*/
+section{
+    width: 100%;
+    
+}
+article{
+    width: 100%;
+    
+}
+#search-area{
+    position: relative;
+}
+.bacground-search{
+    width: 100%;
+    height: 571px;
+/*    position: relative;*/
+}
+.slide{
+    width: 100%;
+    height: 571px;
+    margin: auto;
+    position: absolute;
+}
+section article .bacground-search .slide img{
+    width: 100%;
+/*    height: 571;*/
+    margin: auto;
+}
+.effect {
+  -webkit-animation-name: effect;
+  -webkit-animation-duration: 1.5s;
+  animation-name: effect;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes effect {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes effect {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*search*/
+.search{
+    position: absolute;
+    top:45%;
+    left: 5%;
+    width: 90%;
+
+}
+.search-position{
+    position: absolute;
+    width: 100%;
+    height: 8em;
+    top: 45%;
+    left: 0%;
+    z-index: 99;
+    background-color: #4c4c4c;
+    opacity: 0.6;
+}
+
+.form-search{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    padding: 1.9em;
+   
+}
+
+
+.search-business , .search-location{
+    display: inline;
+    position: absolute;
+    background-color: #fff;
+    height: 3.4em;
+    width: 35%;
+    padding: 0.3em;
+}
+.search-location{
+    left: 45%;
+}
+.search-business input , .search-location input{
+    border: none;
+    width: 80%
+}
+.form-search button{
+    position: absolute;
+    right: 0%;
+    height: 3.4em;
+    width: 15%;
+}
+#suggest-area{
+    width: 100%;
+    margin-top: 3em;
+}
+.suggest-bar{
+    width: 80%;
+    margin: 0 auto;
+    border: 1.5px solid black;
+    box-shadow: 1px 2px 2px #aaa;
+    overflow: auto;
+}
+.suggest-bar .suggest{
+    float: left;
+    width: 33.33%;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.3em;
+    padding: 0.4em 1.1em;
+    text-align: center;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+.suggest-bar .suggest:first-child{
+    border-left: none;
+}
+
+.suggest-bar .suggest:hover{
+    color: #F5AB1D;
+    background-color: #e3e3e3;
+}
+/*
+.active{
+    background-color: #00B9F2;
+    color: #fff;s    
+}
+*/
+#iframe-suggest{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2em;
+    
+}
