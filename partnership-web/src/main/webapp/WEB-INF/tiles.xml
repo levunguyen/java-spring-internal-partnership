@@ -39,7 +39,13 @@
 			<put-attribute name="body" value="/view/user/location.jsp" />
 		</definition>
 	<!-- try -->
-
+		
+		<!-- Profile Page -->
+		<definition name="location" extends="definition">
+			<put-attribute name="body" value="/view/user/profile.jsp" />
+		</definition>
+	<!-- try -->
+		
 	<!-- ContactUs Page -->
 	<!-- <definition name="servicefriend" extends="definition">
 		<put-attribute name="body" value="/view/user/service_friend.jsp" />

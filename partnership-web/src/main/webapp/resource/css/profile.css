@@ -1,0 +1,74 @@
+          header, nav, footer, article {
+                display:block;
+            } 
+            nav {float:left; width:20%;} 
+            article {float:right; width:79%;} 
+            footer {clear:both;}
+            session{
+                
+            }
+            .min{
+                width:100%;
+            }
+            .container{
+		width:99%;
+	           }
+                .view-pro5{padding-top: 25px;}
+                .description{padding-top: 15px;}
+                .name{padding-bottom: 25px;}
+                .business{padding-top:15px;}
+                .address{padding-top: 15px;padding-bottom: 15px;}
+                .action{padding-top: 30px;padding-botton: 30px;}
+                .btn-submit-save-profile{
+                    font-size: 17px;
+                    font-weight: 200 !important;
+                    margin-top: 20px;
+                    height: 45px;
+                    width: 100%;
+                    border-radius: 0;
+                    color: #fff;
+                    background-color: #04be5b;
+                    border: 1px solid #04be5b;
+                    transition: all 0.5s;
+                    box-shadow: none;
+                    outline: none !important;
+                }
+                .btn-submit-update-products{
+                    font-size: 17px;
+                    font-weight: 200 !important;
+                    margin-top: 20px;
+                    height: 45px;
+                    width: 100%;
+                    border-radius: 0;
+                    color: #fff;
+                    background-color: orange;
+                    border: 1px solid #04be5b;
+                    transition: all 0.5s;
+                    box-shadow: none;
+                    outline: none !important;
+                }
+             .topright {
+                position: absolute;
+                top: 3px;
+                right: 20px;
+                font-size: 10px;
+                }.topright #button{width: 10px;}
+                .business-item--cover__large {
+                    width: 100%;
+                    border: 1px solid #eee;
+                    background-color: #fafafa;
+                            }.btn {
+                    display: inline-block;
+                    font-weight: normal;
+                    text-align: center;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    background-image: none;
+                    border: 1px solid transparent;
+                    white-space: nowrap;
+                    padding: 6px 12px;
+                    font-size: 14px;
+                    line-height: 1.42857;
+                                border-radius: 4px;
+                                }
+   
