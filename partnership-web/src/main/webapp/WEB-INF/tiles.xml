@@ -41,7 +41,8 @@
 	<!-- try -->
 		
 		<!-- Profile Page -->
-		<definition name="location" extends="definition">
+		<definition name="profile" extends="definition">
+			<put-attribute name="title" value="Profile" />  
 			<put-attribute name="body" value="/view/user/profile.jsp" />
 		</definition>
 	<!-- try -->
@@ -137,7 +138,3 @@
 		<put-attribute name="body" value="/view/user/userprofile.jsp"></put-attribute>
 	</definition> -->
 </tiles-definitions>  
- 
- 
- 
- 
