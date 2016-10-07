@@ -1,13 +1,14 @@
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <!doctype html> 
 <meta charset=utf-8>
 <html lang="en">
 <head>
-  <title>Profile</title>
+
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -16,6 +17,8 @@
     <link href="<c:url value="/resource/css/profile.css" />" rel="stylesheet">
 </head>
     <body>
+    
+     
         <div class="container view-pro5">
             <section class="container">
                 <div class="col-sm-3">
@@ -172,7 +175,8 @@
                     </form>    
                 </div>
             </section>
-            
-        </div>      
+        </div>     
+        
+         
     </body>
 </html>
