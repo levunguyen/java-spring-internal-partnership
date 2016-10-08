@@ -9,6 +9,7 @@
 	
 	<link href="<c:url value="/resource/css/home-body.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/css/bootstrap.css" />" rel="stylesheet">
+	<script src="<c:url value="/resource/js/home/home.js"/>" type="text/javascript"></script>
 	</head>
 
 <body>	
@@ -16,13 +17,13 @@
 			<article id="search-area">
                 <div class="bacground-search">
                     <div class="slide effect">
-                        <img alt="partnerShip" src="/resource/images/home-page/JOBS.jsp" />
+                        <img alt="partnerShip" src="/partnership-web/resource/images/home-page/JOBS.jpg" />
                     </div>
                     <div class="slide effect">
-                        <img alt="partnerShip" src="image/job2.jpg" />
+                        <img alt="partnerShip" src="/partnership-web/resource/images/home-page/job2.jpg" />
                     </div>
                     <div class="slide effect">
-                        <img alt="partnerShip" src="image/job3.jpg" />
+                        <img alt="partnerShip" src="/partnership-web/resource/images/home-page/job3.jpg" />
                     </div>
                 </div>
 <!--                end class bacground-search-->
@@ -45,9 +46,9 @@
             <article id="suggest-area">
                 <div class="suggest-bar">
                    
-                        <div class="suggest" onclick="toPage(1 , 'suggestweekly.html')">The Commandables of This Week</div>
-                        <div class="suggest" onclick="toPage(2 ,'suggestweekly2.html')">The Commandables of This Month</div>
-                        <div class="suggest" onclick="toPage(3, 'suggestweekly3.html')">The Commandables on Top</div>
+                        <div class="suggest" onclick="toPage(0 , 'suggestweekly.html')">The Commandables of This Week</div>
+                        <div class="suggest" onclick="toPage(1 ,'suggestweekly2.html')">The Commandables of This Month</div>
+                        <div class="suggest" onclick="toPage(2, 'suggestweekly3.html')">The Commandables on Top</div>
                     
                 </div>
                 <div class="suggest-users">

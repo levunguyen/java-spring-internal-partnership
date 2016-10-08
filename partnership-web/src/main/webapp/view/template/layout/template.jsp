@@ -9,9 +9,11 @@
 	<title><tiles:getAsString name="title" /></title>
 	<link href="<c:url value="/resource/css/header.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/css/bootstrap.css" />" rel="stylesheet">
-	<title>Home Page</title>
-	</head>
+	<link href="<c:url value="/resource/font-awesome-4.5.0/css/font-awesome.css" />" rel="stylesheet">
+<!-- 	<script src="<c:url value="/resource/js/home/home.js"/>" >	</script> -->
 
+	<title>partnerShip</title>
+	</head>
 <body>
 
     <header>
