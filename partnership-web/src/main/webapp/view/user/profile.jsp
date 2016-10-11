@@ -23,32 +23,32 @@
             <section class="container">
                 <div class="col-sm-3">
                     <div class="no-padding-horizon">
-                            <img src="<c:url value="/resource/images/profile-avatar/avatar-defaul.png" />" class="business-item--cover__large"> 
+                            <img src="<c:url value="/resource/images/profile-avatar/avatar-defaul.png" />" class="business-item--cover__large avatar"> 
                     </div>
                     <div class="topright">
-                        <a type="button"  data-toggle="modal" data-target="#myModal">
-                          <i class="fa fa-pencil-square avatar" style="font-size:34px"></i>
+                    	
+                        <a type="button"  data-toggle="modal" data-target=".bs-example-modal-sm">
+                        	<i class="fa fa-pencil-square avatar" style="font-size:34px"></i>
                         </a>
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Change Avatar</h4>
+						
+						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+						  <div class="modal-dialog modal-sm" role="document">
+						    <div class="modal-content">
+						      
+						      <form class="container">
+                                      <input type="file" name="avatar" multiple>
+                                    </form>
+						      <div class="panel-body">
+							    Upload image
+							  </div>
+							  <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
                               </div>
-                              <div class="modal-body">
-                                <form class="container">
-                                  <input type="file" name="img" multiple>
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                                    
+						    </div>
+						  </div>
+						</div>
                     </div>
                      
                     
@@ -102,16 +102,9 @@
                                 <label for="type">Address</label>          
                                             <div class="input-group">
                                               <input type="text" class="form-control" aria-label="...">
-                                              <div class="input-group-btn">
-                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add<span class="caret"></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                  <li><a href="#">Action</a></li>
-                                                  <li><a href="#">Another action</a></li>
-                                                  <li><a href="#">Something else here</a></li>
-                                                  <li role="separator" class="divider"></li>
-                                                  <li><a href="#">Separated link</a></li>
-                                                </ul>
-                                              </div><!-- /btn-group -->
+                                              <span class="input-group-btn">
+                                            		<button class="btn btn-success" type="button">Add</button>
+                                          		</span>
                                             </div><!-- /input-group -->
                         </div>
                         </row>
