@@ -32,7 +32,8 @@
 
 
 
-			$(function(){
+			$(function(){				
+				
                 $('.slide img:gt(0)').hide();
                 setInterval(function(){
 	                $('.slide :first-child').fadeOut()
