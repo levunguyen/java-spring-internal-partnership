@@ -23,8 +23,8 @@
             <section class="container">
                 <div class="col-sm-3">
                     <div class="no-padding-horizon">
-                            <img src="<c:url value="/resource/image/avatar-defaul.png" />" class="business-item--cover__large"> 
-                    </div> 
+                            <img src="<c:url value="/resource/images/profile-avatar/avatar-defaul.png" />" class="business-item--cover__large"> 
+                    </div>
                     <div class="topright">
                         <a type="button"  data-toggle="modal" data-target="#myModal">
                           <i class="fa fa-pencil-square avatar" style="font-size:34px"></i>
