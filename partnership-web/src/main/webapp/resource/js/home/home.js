@@ -20,7 +20,7 @@
 
 			/*---------------------- SCROLL FUNCTION --------------------------*/
 			$(window).scroll(function(){
-				if($(window).scrollTop() > $(window).outerHeight() ){
+				if($(window).scrollTop() > $('.search').outerHeight() ){
 					$('.search').addClass('scrollActive');
 				}
 				else{
