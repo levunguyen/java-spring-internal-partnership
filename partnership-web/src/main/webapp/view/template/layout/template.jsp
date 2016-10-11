@@ -10,6 +10,7 @@
 	<link href="<c:url value="/resource/css/header.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/css/bootstrap.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/font-awesome-4.5.0/css/font-awesome.css" />" rel="stylesheet">
+	<script src="<c:url value="/resource/js/jquery-1.9.1.min.js"/>" >	</script> 
 	<script src="<c:url value="/resource/js/home/home.js"/>" >	</script> 
 	<link href="<c:url value="/resource/css/font-awesome-4.6.3/css/font-awesome.min.css" />" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
