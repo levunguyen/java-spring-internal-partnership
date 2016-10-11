@@ -49,6 +49,7 @@
                                     <i class="fa fa-google" aria-hidden="true"> </i><span>Login with Google+</span></a>
                                 </div>
                             </form>
+                            s
                         </div>
                       </div>
 

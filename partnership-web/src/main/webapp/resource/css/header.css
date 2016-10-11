@@ -38,7 +38,7 @@ header #header-login #lang{
 header #header-login #lang #flag{
     width: 60px;
     height: 35px;
-    background-image: url(image/vnlang.png);
+    background-image: url(/partnership-web/resource/images/home-page/vnlang.png);
     background-size: 61px 36px;
     background-repeat: no-repeat;
     box-shadow: 1px 2px 2px 2px #aaa; 
