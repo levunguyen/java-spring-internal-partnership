@@ -1,6 +1,6 @@
 <header>
             <div class="logo col-md-6 col-sm-6">
-               <h1>partnerShip</h1>
+               <img class="logo-homepage" alt="partnership" src="/partnership-web/resource/images/logo/logo_homepage.png">
             </div>
             <div id="header-login" class="col-md-5 col-md-offset-1 col-sm-6">
                 <div class="area-log col-md-7 col-sm-7">

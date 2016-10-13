@@ -15,17 +15,25 @@
                 </div>
 <!--                end class bacground-search-->
                 <div class="search">
-                    
+                    <div class="logo-search">
+                    	
+                    		<img class="logo-search-position" alt="parnerShip" src="/partnership-web/resource/images/logo/logo-search-position.png">
+                    	
+                    </div>
                     <form class="form-search row" action="#" method="post">
-                        <div class="search-business col-md-5">
-                            <i class="fa fa-user fa-3x" aria-hidden="true"></i>
-                            <input type="text" placeholder="Search business"/>
+                        <div class="search-business col-md-5 col-xs-5">
+                        	<div class="box-sizing">
+	                            <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+	                            <input type="text" placeholder="Search business"/>
+	                        </div>
                         </div>
-                        <div class="search-location col-md-5">
-                            <i class="fa fa-street-view fa-3x" aria-hidden="true"></i>
-                            <input type="text" placeholder="Search location"/>
+                        <div class="search-location col-md-5 col-xs-5">
+                        	<div class="box-sizing">
+	                            <i class="fa fa-street-view fa-3x" aria-hidden="true"></i>
+	                            <input type="text" placeholder="Search location"/>
+	                        </div>
                         </div>
-                        <button class="btn btn-success col-md-2" type="submit" value="Search businesses">Search businesses</button>
+                        <button class="btn btn-success col-md-2 col-xs-2" type="submit" value="Search businesses">Search businesses</button>
                     </form>
                 </div>
                 
