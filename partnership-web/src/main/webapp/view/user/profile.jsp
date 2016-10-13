@@ -1,24 +1,92 @@
-<%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" isELIgnored="false"%>
-<!doctype html> 
-<meta charset=utf-8>
-<html lang="en">
-<head>
-
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href="<c:url value="/resource/css/profile.css" />" rel="stylesheet">
-</head>
-    <body>
-    
-     
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ <style>
+	header, nav, footer, article {
+                display:block;
+            } 
+            nav {float:left; width:20%;} 
+            article {float:right; width:79%;} 
+            footer {clear:both;}
+            session{
+                
+            }
+            .min{
+                width:100%;
+            }
+            .container{
+		width:99%;
+	           }
+                .view-pro5{padding-top: 25px;}
+                .description{padding-top: 15px;}
+                .name{padding-bottom: 25px;}
+                .business{padding-top:15px;}
+                .address{padding-top: 15px;padding-bottom: 15px;}
+        .action{padding-top: 15px;}
+        .save-profile{width: auto;}
+                .btn-submit-save-profile{
+                    font-size: 17px;
+                    font-weight: 200 !important;
+                    margin-top: 20px;
+                    height: 45px;
+                    width: 100%;
+                    border-radius: 0;
+                    color: #fff;
+                    background-color: #04be5b;
+                    border: 1px solid #04be5b;
+                    transition: all 0.5s;
+                    box-shadow: none;
+                    outline: none !important;
+                }
+                .btn-submit-update-products{
+                    font-size: 17px;
+                    font-weight: 200 !important;
+                    margin-top: 20px;
+                    height: 45px;
+                    width: 100%;
+                    border-radius: 0;
+                    color: #fff;
+                    background-color: orange;
+                    border: 1px solid #04be5b;
+                    transition: all 0.5s;
+                    box-shadow: none;
+                    outline: none !important;
+                }
+             .topright {
+                position: absolute;
+                top: 3px;
+                right: 20px;
+                font-size: 10px;
+                }.topright #button{width: 10px;}
+                
+              .business-item--cover__large {
+                    width: 100%;
+                    border: 1px solid #eee;
+                    background-color: #fafafa;
+                            }.btn {
+                    display: inline-block;
+                    font-weight: normal;
+                    text-align: center;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    background-image: none;
+                    border: 1px solid transparent;
+                    white-space: nowrap;
+                    padding: 6px 12px;
+                    font-size: 14px;
+                    line-height: 1.42857;
+                                border-radius: 4px;
+                                }
+   				.upload{margin-top:20px;}
+        .input-tel{
+            position: relative;
+    z-index: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 48px;
+    margin-left: 0;
+    transition: background-color 100ms ease-out;
+        }
+</style>
+<body>
         <div class="container view-pro5">
             <section class="container">
                 <div class="col-sm-3">
@@ -32,10 +100,10 @@
                         </a>
 						
 						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-						  <div class="modal-dialog modal-sm" role="document">
+						  <div class="modal-dialog modal-sm " role="document">
 						    <div class="modal-content">
 						      
-						      <form class="container">
+						      <form class="container upload">
                                       <input type="file" name="avatar" multiple>
                                     </form>
 						      <div class="panel-body">
@@ -113,7 +181,7 @@
                         <div class="col-sm-6">
                                         <label for="email">Email</label>
                                         <div class="input-group">
-                                          <input class="form-control" id="email" type="text" disabled placeholder="phuongnq.itedu@gmail.com">
+                                          <input id="user-email" type="text" data-rule-required="true" maxlength="250" value="phuongnq.itedu@gmail.com" readonly="" class="form-control" aria-required="true" aria-invalid="false">
                                           <span class="input-group-btn">
                                             <button class="btn btn-success" type="button">Change</button>
                                           </span>
@@ -122,7 +190,7 @@
                                    <div class="col-sm-6">
                                        <label for="phone">Phone</label>
                                        <div class="input-group">
-                                          <input type="tel" class="form-control" id="phone" disabled placeholder="0905747851">
+                                          <input id="user-phone-number" type="tel" type="text" data-rule-required="true" maxlength="250" value="0905 747 851" readonly="" class="form-control" aria-required="true" aria-invalid="false">
                                           <span class="input-group-btn">
                                             <button class="btn btn-success" type="button">Change</button>
                                           </span>
@@ -131,45 +199,13 @@
                         </row>  
                         
                         <row>
-                        <footer class="container-fuild action">
-                            <div class="col-sm-4 save-profile">
+                            <div class="col-sm-4 action">
                                 <button type="submit" class="btn btn-submit-save-profile">Save Profile</button>
-                            </div>
-                            
-                            
-                            <div class="col-sm-4 update-products">
-                                <button type="button" class="btn btn-submit-update-products" data-toggle="modal" data-target=".bs-example-modal-lg">Update Products</button>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                              <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <form class="container description">
-                                        <div class="form-group">
-                                          <label class="container"for="comment">Discription</label>
-                                          <textarea class="form-control" rows="5" id="comment" placeholder="Write some thing for this project"></textarea>
-                                        </div>
-                                    </form>
-                                    <form class="container">
-                                      <input type="file" name="img" multiple>
-                                    </form>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save</button>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                            
-
-                            
-                        </footer>
+                            </div>           
                         </row>    
+                        
                     </form>    
                 </div>
             </section>
         </div>     
-        
-         
     </body>
-</html>
