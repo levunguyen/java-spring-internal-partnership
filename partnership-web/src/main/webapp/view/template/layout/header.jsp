@@ -68,7 +68,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                                <h4 class="modal-title" id="exampleModalLabel">REGISTER ACCOUNT</h4>
                             </div>
                             <div class="modal-body">
                                 <form class="form-horizontal" method="post" action="#">
@@ -129,7 +129,7 @@
 
                                 </form>
                             </div>
-                            <hr class="form-authentication--breakline">
+                           
 
                             <hr class="form-authentication--breakline">
                             <div class="row no-margin-horizon">
