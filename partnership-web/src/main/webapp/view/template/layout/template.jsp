@@ -13,7 +13,7 @@
 	<link href="<c:url value="/resource/font-awesome-4.5.0/css/font-awesome.css" />" rel="stylesheet">	
 	<link href="<c:url value="/resource/css/font-awesome-4.6.3/css/font-awesome.min.css" />" rel="stylesheet">	
  	<link href="<c:url value="/resource/css/home-body.css" />" rel="stylesheet">
-	
+	<link href="<c:url value="/resource/css/profile.css" />" rel="stylesheet">
 	<title>Home Page</title>
 	</head>
 

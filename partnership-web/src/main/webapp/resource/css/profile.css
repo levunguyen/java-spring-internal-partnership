@@ -1,4 +1,4 @@
-          header, nav, footer, article {
+header, nav, footer, article {
                 display:block;
             } 
             nav {float:left; width:20%;} 
@@ -14,11 +14,13 @@
 		width:99%;
 	           }
                 .view-pro5{padding-top: 25px;}
-                .description{padding-top: 15px;}
-                .name{padding-bottom: 25px;}
-                .business{padding-top:15px;}
-                .address{padding-top: 15px;padding-bottom: 15px;}
-                .action{padding-top: 30px;padding-botton: 30px;}
+                .description-profile{padding-top: 15px;}
+                .name-group{padding-bottom: 25px;}
+                .business-group{padding-top:15px;}
+                .address-group{padding-top: 15px;padding-bottom: 15px;}
+        .action-save{padding-top: 15px;
+                }
+        .save-profile{width: auto;}
                 .btn-submit-save-profile{
                     font-size: 17px;
                     font-weight: 200 !important;
@@ -49,11 +51,13 @@
                 }
              .topright {
                 position: absolute;
-                top: 3px;
-                right: 20px;
+                top: 0px;
+                right: 14%;
                 font-size: 10px;
                 }.topright #button{width: 10px;}
-                .business-item--cover__large {
+             .span-address-add{padding-right: 25px;}
+             .btn-address-add{width: 150%;}
+              .business-item--cover__large {
                     width: 100%;
                     border: 1px solid #eee;
                     background-color: #fafafa;
@@ -71,4 +75,18 @@
                     line-height: 1.42857;
                                 border-radius: 4px;
                                 }
-   
+   				.view-avatar{
+   				            margin-top: 20px;}
+   				.upload-avatar{margin-top:20px;}
+        .input-tel{
+            position: relative;
+    z-index: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 48px;
+    margin-left: 0;
+    transition: background-color 100ms ease-out;
+        }
+        .avatar-defaul{
+            width: 90%;
+        }    
