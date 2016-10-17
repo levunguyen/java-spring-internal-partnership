@@ -14,11 +14,7 @@
 	<link href="<c:url value="/resource/css/font-awesome-4.6.3/css/font-awesome.min.css" />" rel="stylesheet">	
  	<link href="<c:url value="/resource/css/home-body.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/css/profile.css" />" rel="stylesheet">
-	<title>Home Page</title>
-	</head>
-
-
-	<title>partnerShip</title>
+	<title>PartnerShip</title>
 	</head>
 <body>
 
