@@ -4,8 +4,8 @@
             <section class="container">
                 <div class="col-sm-3 view-avatar">
                     <div class="container avatar-defaul">
-                            <img src="<c:url value="/resource/images/profile-avatar/avatar-detault.png" />" class="business-item--cover__large"> 
-                            <div class="topright">
+                    	<div class="container-avatar-pencil">
+                    		<div class="topright-avatar">
                                 <a type="button"  data-toggle="modal" data-target=".bs-example-modal-sm">
                                     <i class="fa fa-pencil-square avatar" style="font-size:34px"></i>
                                 </a>
@@ -27,6 +27,10 @@
                                   </div>
                                 </div>
                             </div>
+                    	
+                            <img src="<c:url value="/resource/images/profile-avatar/avatar-default.png" />" class="business-item--cover__large-profile"> 
+                            
+                         </div>   
                     </div>
                     
                      

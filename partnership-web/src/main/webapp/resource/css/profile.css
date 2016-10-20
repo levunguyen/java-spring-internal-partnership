@@ -49,32 +49,23 @@ header, nav, footer, article {
                     box-shadow: none;
                     outline: none !important;
                 }
-             .topright {
+             .topright-avatar {
                 position: absolute;
-                top: 0px;
-                right: 14%;
+                top: 1%;
+                right: 16%;
                 font-size: 10px;
-                }.topright #button{width: 10px;}
+                }.topright-avatar #button{width: 10px;}
              .span-address-add{padding-right: 25px;}
              .btn-address-add{width: 150%;}
-              .business-item--cover__large {
+              .business-item--cover__large-profile {
                     width: 100%;
-                    border: 1px solid #eee;
+                    border: 1.5px solid #eee;
                     background-color: #fafafa;
-                            }.btn {
-                    display: inline-block;
-                    font-weight: normal;
-                    text-align: center;
-                    vertical-align: middle;
-                    cursor: pointer;
-                    background-image: none;
-                    border: 1px solid transparent;
-                    white-space: nowrap;
-                    padding: 6px 12px;
-                    font-size: 14px;
-                    line-height: 1.42857;
-                                border-radius: 4px;
-                                }
+                            }
+               .container-avatar-pencil{
+               	width: 100%;
+               	
+               }             
    				.view-avatar{
    				            margin-top: 20px;}
    				.upload-avatar{margin-top:20px;}
