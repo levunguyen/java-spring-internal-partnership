@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
+	logicalFilePath="db.changelog.dbmaster-1.0.xml">
+	
+	<!-- Create User table -->
+	<changeSet author="Huy (generated)" id="1"
+		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createTable tableName="User">
+			<column name="userName" type="VARCHAR(45)">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="password" type="VARCHAR(45)" />	
+		</createTable>
+	</changeSet>
+	
+	<!-- Create Profile table -->
+	<changeSet author="Huy (generated)" id="2"
+		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createTable tableName="Profile">
+			<column name="firstName" type="VARCHAR(45)"></column>
+			<column name="lastName" type="VARCHAR(45)" />
+			<column name="image" type="VARCHAR(100)" />
+			<column name="email" type="VARCHAR(50)" />	
+			<column name="phone" type="VARCHAR(45)" />		
+		</createTable>
+	</changeSet>
+	
+	<!-- Create Project table -->
+	<changeSet author="Huy (generated)" id="2"
+		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createTable tableName="Profile">
+			<column name="firstName" type="VARCHAR(45)"></column>
+			<column name="lastName" type="VARCHAR(45)" />
+			<column name="image" type="VARCHAR(100)" />
+			<column name="email" type="VARCHAR(50)" />	
+			<column name="phone" type="VARCHAR(45)" />		
+		</createTable>
+	</changeSet>
+
+</databaseChangeLog>

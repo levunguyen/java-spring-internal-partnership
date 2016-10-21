@@ -211,5 +211,29 @@
 
 	<build>
 		<finalName>partnership-web</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-maven-plugin</artifactId>
+				<version>3.0.7</version>
+				
+				<configuration>
+				<propertyFile>src/main/resources/database.properties</propertyFile>
+					<changeLogFile>src/main/resources/liquidbase/db.changelog-dbmaster.xml
+					</changeLogFile>
+					<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
+				</configuration>
+				
+				<executions>
+					<execution>
+						<id>liquibase-dbmaster-update</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>update</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 </project>
