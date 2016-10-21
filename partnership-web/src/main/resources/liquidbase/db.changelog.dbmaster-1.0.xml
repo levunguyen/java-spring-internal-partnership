@@ -29,7 +29,7 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 	</changeSet>
 	
 	<!-- Create Project table -->
-	<changeSet author="Huy (generated)" id="2"
+	<changeSet author="Huy (generated)" id="3"
 		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
 		<createTable tableName="Profile">
 			<column name="firstName" type="VARCHAR(45)"></column>
