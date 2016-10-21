@@ -24,20 +24,35 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 			<column name="lastName" type="VARCHAR(45)" />
 			<column name="image" type="VARCHAR(100)" />
 			<column name="email" type="VARCHAR(50)" />	
-			<column name="phone" type="VARCHAR(45)" />		
+			<column name="phone" type="VARCHAR(45)" />	
+			<column name="userName" type="VARCHAR(45)">
+				<constraints primaryKey="true" nullable="false" />
+			</column>	
 		</createTable>
 	</changeSet>
 	
 	<!-- Create Project table -->
 	<changeSet author="Huy (generated)" id="3"
 		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<createTable tableName="Profile">
-			<column name="firstName" type="VARCHAR(45)"></column>
-			<column name="lastName" type="VARCHAR(45)" />
-			<column name="image" type="VARCHAR(100)" />
-			<column name="email" type="VARCHAR(50)" />	
-			<column name="phone" type="VARCHAR(45)" />		
+		<createTable tableName="Project">
+			<column name="id" type="INT" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(45)" />
+			<column name="startDate" type="datetime" />
+			<column name="endDate" type="datetime" />	
+			<column name="discrible" type="VARCHAR(45)" />
+			<column name="status" type="INT" />
+			<column name="userName" type="VARCHAR(45)">
+				<constraints nullable="false" foreignKeyName="fk_project_user"
+					references="User(userName)" />
+			</column>		
 		</createTable>
+	</changeSet>
+	
+	
+	<changeSet author="Huy (generated)" id="4">
+		<tagDatabase tag="version_1.0" />
 	</changeSet>
 
 </databaseChangeLog>
