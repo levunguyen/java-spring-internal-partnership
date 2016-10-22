@@ -1,4 +1,4 @@
-package hocviencntt.controller;
+package org.hocviencntt.web.controller;
 
 import org.springframework.stereotype.Controller;
 
