@@ -9,6 +9,7 @@
 		<module>user</module>
 		<module>partnership-web</module>
 		<module>project</module>
+		<module>location</module>
 	</modules>
 
 	<dependencies>
