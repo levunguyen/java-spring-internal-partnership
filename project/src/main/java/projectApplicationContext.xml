@@ -17,6 +17,6 @@
     <!-- This allow for dispatching requests to Controllers -->
     <mvc:annotation-driven />
     
-    <jpa:repositories base-package=""></jpa:repositories>
+    <jpa:repositories base-package="org.hocviencntt.project.repository"></jpa:repositories>
     
 </beans>
