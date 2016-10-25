@@ -19,7 +19,25 @@
 				value="jdbc:mysql://localhost:3306/partnership_db" />
 			<property name="username" value="root" />
 			<property name="password" value="" />
-		</bean>		
+		</bean>	
+		
+		<bean id="entityManagerFactoryBean" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />       
+       <!--  JpaVendorAdapter implementation for Hibernate EntityManager.
+             Exposes Hibernate's persistence provider and EntityManager extension interface  -->
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" >
+                <property name="generateDdl" value="true" ></property>
+                <property name="showSql" value="true"></property>
+            </bean>
+        </property>
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">validate</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+            </props>
+        </property>
+    </bean>	
 		<bean id="transactionManager"
 			class="org.springframework.orm.jpa.JpaTransactionManager">
 			<property name="entityManagerFactory"

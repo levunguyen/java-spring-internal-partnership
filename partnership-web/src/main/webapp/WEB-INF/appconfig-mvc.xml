@@ -38,10 +38,10 @@
         </property>
     </bean>
 
-	<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/view/" />
+	 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/view/user/" />
         <property name="suffix" value=".jsp" />
-    </bean> -->
+    </bean> 
     <!-- This helps in mapping the logical view names to directly view files under a certain pre-configured directory -->
     
 

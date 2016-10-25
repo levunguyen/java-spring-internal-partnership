@@ -17,5 +17,6 @@ public class HomePage {
    public String homePage(Model model) {
        return "home";
    }
+   
 	 
 }
