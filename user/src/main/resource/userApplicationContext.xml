@@ -12,7 +12,7 @@
 ">
 
     <!-- It register the beans in context and scan the annotations inside beans and activate them -->
-    <context:component-scan base-package="org.hocviencntt.user" />
+    <context:component-scan base-package="org.hocviencntt.user.*" />
 
     <!-- This allow for dispatching requests to Controllers -->
     <mvc:annotation-driven />
