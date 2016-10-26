@@ -19,11 +19,6 @@ public class SearchByLocationController {
 	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
 	public String findLocation(Model model){
 		List<Location> listlocations=locationService.findAllLocation();
-		for(Location location : listlocations){
-			System.out.println("id"+location.getId() + "country"+location.getCountry() + "city"+location.getCity() + 
-			"street"+location.getStreet() + "number"+location.getNumber() + "zipcode"+location.getZipcode());
-			
-		}
 		model.addAttribute("allOfLocation",listlocations);
 		return "suggest-daily";
 		
