@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                     	
-                            <img src="<c:url value="/resource/images/profile-avatar/avatar-default.png" />" class="business-item--cover__large-profile"> 
+                            <img src="<c:url value="${profile.image}" />" class="business-item--cover__large-profile"> 
                             
                          </div>   
                     </div>
@@ -45,7 +45,7 @@
                 
                 <div class="col-sm-9">
                 	<row>
-	                    <h3 class="container name-group">Quang Phuong
+	                    <h3 class="container name-group">${profile.firstName} ${profile.lastName}
 	                            <i class="fa fa-star" style="font-size:24px;color:#ffcc00;"></i>
 	                            <i class="fa fa-star" style="font-size:24px;color:#ffcc00;"></i>
 	                            <i class="fa fa-star" style="font-size:24px;color:#ffcc00;"></i>

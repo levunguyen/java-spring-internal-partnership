@@ -94,6 +94,27 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 		</createTable>
 	</changeSet>
 	
+	<changeSet id="p1" author="phuong">
+		<insert tableName="user">
+			<column name="userName" value="admin"></column>
+			<column name="password" value="admin"></column>
+		</insert>
+	</changeSet>
+	
+	
+	<changeSet id="p3" author="phuong">
+		<addDefaultValue columnName="image" tableName="profile" defaultValue="http://sv1.upsieutoc.com/2016/10/26/123.png"/>
+	</changeSet>
+	
+	<changeSet id="p2" author="phuong">
+		<insert tableName="profile">
+			<column name="userName" value="admin"></column>
+			<column name="firstName" value="Quang"></column>
+			<column name="lastName" value="Phuong"></column>
+			<column name="email" value="phuongnq.itedu@gmail.com"></column>
+			<column name="phone" value="0905747851"></column>
+		</insert>
+	</changeSet>
 	
 	<changeSet author="Huy (generated)" id="4">
 		<tagDatabase tag="version_1.0" />
