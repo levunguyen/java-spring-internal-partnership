@@ -11,9 +11,7 @@ import javax.persistence.Table;
 @Table(name = "profile")
 public class Profile {
 	@Id
-	@OneToOne
-	@JoinColumn(name = "username")
-	private User user;
+	private String userName;
 	@Column
 	private String firstname;
 	@Column
@@ -21,14 +19,16 @@ public class Profile {
 	@Column
 	private String email;
 	@Column
-	private int phone;
+	private String phone;
 	@Column
 	private String image;
-	public User getUser() {
-		return user;
+	
+
+	public String getUserName() {
+		return userName;
 	}
-	public void setUser(User user) {
-		this.user = user;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getFirstname() {
 		return firstname;
@@ -48,10 +48,10 @@ public class Profile {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getImage() {
@@ -62,12 +62,12 @@ public class Profile {
 	}
 	@Override
 	public String toString() {
-		return "Profile [user=" + user + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
+		return "Profile [user=" + userName + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
 				+ ", phone=" + phone + ", image=" + image + "]";
 	}
-	public Profile(User user, String firstname, String lastname, String email, int phone, String image) {
+	public Profile(String user, String firstname, String lastname, String email, String phone, String image) {
 		super();
-		this.user = user;
+		this.userName = user;
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.email = email;
