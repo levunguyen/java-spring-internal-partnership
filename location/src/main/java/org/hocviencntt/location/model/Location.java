@@ -1,14 +1,19 @@
 package org.hocviencntt.location.model;
+
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "location")
-public class Location {
+public class Location implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	private int id;
 	@Column
@@ -19,9 +24,20 @@ public class Location {
 	private String street;
 	@Column
 	private String number;
-	@ManyToOne
-	@JoinColumn(name = "username")
-	private User user;
+	@Column
+	private int zipcode;
+	@Column
+	private String username;
+	public Location(int id, String country, String city, String street, String number, int zipcode, String username) {
+		super();
+		this.id = id;
+		this.country = country;
+		this.city = city;
+		this.street = street;
+		this.number = number;
+		this.zipcode = zipcode;
+		this.username = username;
+	}
 	public int getId() {
 		return id;
 	}
@@ -52,28 +68,26 @@ public class Location {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public User getUser() {
-		return user;
+	public int getZipcode() {
+		return zipcode;
 	}
-	public void setUser(User user) {
-		this.user = user;
+	public void setZipcode(int zipcode) {
+		this.zipcode = zipcode;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	@Override
 	public String toString() {
 		return "Location [id=" + id + ", country=" + country + ", city=" + city + ", street=" + street + ", number="
-				+ number + ", user=" + user + "]";
+				+ number + ", zipcode=" + zipcode + ", username=" + username + "]";
 	}
-	public Location(int id, String country, String city, String street, String number, User user) {
-		super();
-		this.id = id;
-		this.country = country;
-		this.city = city;
-		this.street = street;
-		this.number = number;
-		this.user = user;
+
+	public Location() {
+		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
-	
+
 }

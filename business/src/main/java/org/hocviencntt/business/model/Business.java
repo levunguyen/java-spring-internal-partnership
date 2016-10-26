@@ -1,4 +1,4 @@
-package org.hocviencntt.location.model;
+package org.hocviencntt.business.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,7 +20,6 @@ public class Business {
 	
 	@ManyToOne
 	@JoinColumn(name = "username")
-	private User user;
 
 	public int getId() {
 		return id;
@@ -46,17 +45,10 @@ public class Business {
 		this.experience = experience;
 	}
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
 
 	@Override
 	public String toString() {
-		return "Business [id=" + id + ", name=" + name + ", experience=" + experience + ", user=" + user + "]";
+		return "Business [id=" + id + ", name=" + name + ", experience=" + experience  + "]";
 	}
 	
 	public Business() {
