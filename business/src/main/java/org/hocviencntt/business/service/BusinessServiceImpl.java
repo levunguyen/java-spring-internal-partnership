@@ -1,5 +1,7 @@
 package org.hocviencntt.business.service;
 
+import java.util.List;
+
 import org.hocviencntt.business.model.Business;
 import org.hocviencntt.business.repository.BusinessRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +13,11 @@ public class BusinessServiceImpl implements BusinessService {
 	@Autowired
 	BusinessRepository businessRepository;
 
-	public Business findByBusiness(String name) {
+	public List<Business> findAllBusinessByUserName(String username) {
 		// TODO Auto-generated method stub
-		return businessRepository.findByBusiness(name);
+		return businessRepository.findAllBusinessByUserName(username);
 	}
-	
+
 
 	
 	

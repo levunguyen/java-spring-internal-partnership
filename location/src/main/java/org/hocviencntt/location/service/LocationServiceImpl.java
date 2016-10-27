@@ -13,9 +13,12 @@ public class LocationServiceImpl implements LocationService {
 	@Autowired
 	LocationRepository locationRepository;
 
-	public List<Location> findAllLocation() {
+	public List<Location> findAllLocationByUserName(String username) {
 		// TODO Auto-generated method stub
-		return locationRepository.findAllLoCation();
+		return locationRepository.findAllLoCationByUserName(username);
 	}
+
+
+	
 
 }
