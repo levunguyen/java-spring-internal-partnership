@@ -23,15 +23,15 @@ public class SearchBusinessAndLocationController {
 	
 	@RequestMapping(value = "/findBusiness", method = RequestMethod.GET)
 	public String findBusiness(@RequestParam("username") String username, Model model) {
-		List<Business> listBusinesses=businessService.findAllBusinessByUserName(username);
-		model.addAttribute("business", listBusinesses);
+		List<Business> listBusinesses=businessService.findByUserName(username);
+		model.addAttribute("allOfBusiness", listBusinesses);
 		return "suggest-daily";
 	} 
 	
 
 	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
 	public String findLocation(@RequestParam("username")String username,Model model){
-		List<Location> listLocations=locationService.findAllLocationByUserName(username);
+		List<Location> listLocations=locationService.findByUserName(username);
 		model.addAttribute("allOfLocation",listLocations);
 		return "suggest-daily";
 		

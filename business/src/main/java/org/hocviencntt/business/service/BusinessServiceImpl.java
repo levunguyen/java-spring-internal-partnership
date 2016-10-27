@@ -13,9 +13,9 @@ public class BusinessServiceImpl implements BusinessService {
 	@Autowired
 	BusinessRepository businessRepository;
 
-	public List<Business> findAllBusinessByUserName(String username) {
+	public List<Business> findByUserName(String username) {
 		// TODO Auto-generated method stub
-		return businessRepository.findAllBusinessByUserName(username);
+		return businessRepository.findByUserName(username);
 	}
 
 

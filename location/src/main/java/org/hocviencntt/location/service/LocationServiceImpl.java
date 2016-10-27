@@ -13,9 +13,9 @@ public class LocationServiceImpl implements LocationService {
 	@Autowired
 	LocationRepository locationRepository;
 
-	public List<Location> findAllLocationByUserName(String username) {
+	public List<Location> findByUserName(String username) {
 		// TODO Auto-generated method stub
-		return locationRepository.findAllLoCationByUserName(username);
+		return locationRepository.findByUserName(username);
 	}
 
 

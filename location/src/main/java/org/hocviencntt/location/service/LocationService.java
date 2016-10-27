@@ -6,5 +6,5 @@ import org.hocviencntt.location.model.Location;
 
 public interface LocationService {
 
-	public List<Location> findAllLocationByUserName(String username);
+	public List<Location> findByUserName(String username);
 }

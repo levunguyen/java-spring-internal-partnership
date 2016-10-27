@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-public interface BusinessRepository extends JpaRepository<Business, Integer> {
+public interface BusinessRepository extends JpaRepository<Business, String> {
 
 	@Query("select b from business b where b.username=:username")
-	public List<Business> findAllBusinessByUserName(@Param("username")String username) ;
+	public List<Business> findByUserName(@Param("username")String username) ;
 }
