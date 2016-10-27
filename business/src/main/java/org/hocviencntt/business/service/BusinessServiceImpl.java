@@ -11,7 +11,6 @@ public class BusinessServiceImpl implements BusinessService {
 	@Autowired
 	BusinessRepository businessRepository;
 
-	@Override
 	public Business findByBusiness(String name) {
 		// TODO Auto-generated method stub
 		return businessRepository.findByBusiness(name);
