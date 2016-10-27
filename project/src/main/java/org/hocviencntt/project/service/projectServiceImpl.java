@@ -8,8 +8,7 @@ public class projectServiceImpl implements projectService{
 	@Autowired
 	ProjectRepository repository;
 
-	public boolean deleteShop(int id) {
-		// TODO Auto-generated method stub
+	public boolean deleteProject(int id) {
 		Project project=repository.findOne(id);
 		if (project == null) {
 			return false;
@@ -17,6 +16,8 @@ public class projectServiceImpl implements projectService{
 		repository.delete(id);;
 		return true;
 	}
+
+	
 	
 	
 

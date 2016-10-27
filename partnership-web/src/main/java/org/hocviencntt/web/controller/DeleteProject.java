@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class DeleteProject {
 	@Autowired
-	projectService project;
+	projectService projectService;
 	@RequestMapping(value="/deleteproject",method =RequestMethod.GET)
 	public String deleteProject(@RequestParam(value="id") int id){
-		if (project.deleteShop(id)) {
+		if (projectService.deleteProject(id)) {
 			return null;
 		}
 		return "HomeError";
