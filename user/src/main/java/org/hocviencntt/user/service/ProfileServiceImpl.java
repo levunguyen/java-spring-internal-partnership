@@ -8,7 +8,7 @@ public class ProfileServiceImpl implements ProfileService{
 	public ProfileRepository profileRepository;
 
 	public Profile loadProfile(String username) {
-		return profileRepository.findByUsername(username);
+		return profileRepository.findByUserName(username);
 	}
 	
 	
