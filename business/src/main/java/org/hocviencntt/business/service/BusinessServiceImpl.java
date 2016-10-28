@@ -7,7 +7,6 @@ import org.hocviencntt.business.repository.BusinessRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
 public class BusinessServiceImpl implements BusinessService {
 
 	@Autowired
