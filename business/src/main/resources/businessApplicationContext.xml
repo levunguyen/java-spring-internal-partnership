@@ -12,11 +12,11 @@
 ">
 
     <!-- It register the beans in context and scan the annotations inside beans and activate them -->
-    <context:component-scan base-package="org.hocviencntt.user.*" />
+    <context:component-scan base-package="org.hocviencntt.business.*" />
 
     <!-- This allow for dispatching requests to Controllers -->
     <mvc:annotation-driven />
     
-    <jpa:repositories base-package="org.hocviencntt.location.repository"></jpa:repositories>
+    <jpa:repositories base-package="org.hocviencntt.business.repository"></jpa:repositories>
     
 </beans>

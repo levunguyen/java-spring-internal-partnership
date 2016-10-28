@@ -26,9 +26,9 @@ public class SearchBusinessAndLocationController {
 		List<Business> listBusinesses=businessService.findByUserName(username);
 		model.addAttribute("allOfBusiness", listBusinesses);
 		return "suggest-daily";
-	} 
+	} //User lấy ở đâu ra??
 	
-
+	//?????
 	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
 	public String findLocation(@RequestParam("username")String username,Model model){
 		List<Location> listLocations=locationService.findByUserName(username);
