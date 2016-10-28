@@ -15,7 +15,6 @@
 	<import resource="appconfig-data.xml" />
 	<import resource="classpath:projectApplicationContext.xml"/>
 	<import resource="classpath:userApplicationContext.xml"/>
-    <import resource="classpath:locationApplicationContext.xml"/>
-	<import resource="classpath:businessApplicationContext.xml"/>
-	
+    
+
 </beans>

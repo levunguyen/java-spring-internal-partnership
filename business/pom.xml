@@ -7,25 +7,22 @@
     <artifactId>partnership-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
+  <groupId>hocviencongnghethongtin</groupId>
   <artifactId>business</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>business</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-
-
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-
-	
-		<!-- Spring MVC support -->
-		<dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.1.4.RELEASE</version>
@@ -165,8 +162,5 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
-
-
-
-	</dependencies>
+  </dependencies>
 </project>
