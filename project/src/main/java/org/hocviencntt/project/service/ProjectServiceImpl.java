@@ -4,7 +4,7 @@ import org.hocviencntt.project.model.Project;
 import org.hocviencntt.project.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class projectServiceImpl implements projectService{
+public class ProjectServiceImpl implements ProjectService{
 	@Autowired
 	ProjectRepository repository;
 

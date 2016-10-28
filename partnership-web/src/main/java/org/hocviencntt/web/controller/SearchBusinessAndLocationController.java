@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class SearchBusinessAndLocationController {
 
 	@Autowired
-	BusinessService businessService;
+	private BusinessService businessService;
 	
 	@Autowired
-	LocationService locationService;
+	private LocationService locationService;
 	
 	@RequestMapping(value = "/findBusiness", method = RequestMethod.GET)
 	public String findBusiness(@RequestParam("username") String username, Model model) {

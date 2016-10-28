@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class DeleteProject {
 	@Autowired
-	projectService projectService;
+	private projectService projectService;
 	@RequestMapping(value="/deleteproject",method =RequestMethod.GET)
 	public String deleteProject(@RequestParam(value="id") int id){
 		if (projectService.deleteProject(id)) {
