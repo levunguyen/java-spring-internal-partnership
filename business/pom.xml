@@ -7,9 +7,7 @@
     <artifactId>partnership-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <groupId>hocviencongnghethongtin</groupId>
   <artifactId>business</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
   <name>business</name>
   <url>http://maven.apache.org</url>
   <properties>
