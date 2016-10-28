@@ -1,6 +1,5 @@
 package org.hocviencntt.user.repository;
 
-import java.util.List;
 
 import org.hocviencntt.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

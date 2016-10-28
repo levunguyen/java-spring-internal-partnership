@@ -3,7 +3,8 @@ package org.hocviencntt.project.service;
 import org.hocviencntt.project.model.Project;
 import org.hocviencntt.project.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
+@Service
 public class ProjectServiceImpl implements ProjectService{
 	@Autowired
 	ProjectRepository repository;
