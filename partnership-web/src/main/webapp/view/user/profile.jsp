@@ -57,11 +57,11 @@
                         <row class="view-name">
                             <div class="col-sm-6">
                                             <label for="type">First Name</label>
-                                            <input type="text" class="form-control" id="firstname" placeholder="Quang">
+                                            <input type="text" class="form-control" id="firstname" placeholder="${profile.firstName}">
                             </div>
                             <div class="col-sm-5">
                                            <label for="type">Last Name</label>
-                                            <input type="text" class="form-control" id="lastname" placeholder="Phuong">
+                                            <input type="text" class="form-control" id="lastname" placeholder="${profile.lastName}">
                              </div>
                          </row> 
                         <row>
@@ -98,7 +98,7 @@
                         <div class="col-sm-6">
                                         <label for="email">Email</label>
                                         <div class="input-group">
-                                          <input id="user-email" type="text" data-rule-required="true" maxlength="250" value="phuongnq.itedu@gmail.com" readonly="" class="form-control" aria-required="true" aria-invalid="false">
+                                          <input id="user-email" type="text" data-rule-required="true" maxlength="250" value="${profile.email}" readonly="" class="form-control" aria-required="true" aria-invalid="false">
                                           <span class="input-group-btn">
                                             <button class="btn btn-success" type="button">Change</button>
                                           </span>
@@ -107,7 +107,7 @@
                                    <div class="col-sm-5">
                                        <label for="phone">Phone</label>
                                        <div class="input-group">
-                                          <input id="user-phone-number" type="text" maxlength="250" readonly="" class="phoneInput form-control" autocomplete="off" placeholder="0905 747 851">
+                                          <input id="user-phone-number" type="text" maxlength="250" readonly="" class="phoneInput form-control" autocomplete="off" placeholder="#{profile.phone }">
                                           <span class="input-group-btn">
                                             <button class="btn btn-success" type="button">Change</button>
                                           </span>
