@@ -12,10 +12,12 @@ public class BusinessServiceImpl implements BusinessService {
 	@Autowired
 	BusinessRepository businessRepository;
 
-	public List<Business> findByUserName(String username) {
+	public List<Business> findBusiness(String name) {
 		// TODO Auto-generated method stub
-		return businessRepository.findByUserName(username);
+		return businessRepository.findByBusiness(name);
 	}
+
+	
 
 
 	
