@@ -14,11 +14,14 @@ public class ProfileController {
 	@Autowired
 	private ProfileService profileService;
 	
-	@RequestMapping(value="/profile",method=RequestMethod.GET)
-	public String showProfile(Model model
-			,@RequestParam(value="username") String usernmame){
-		String username=null;
+	@RequestMapping(value="/profile" , method=RequestMethod.GET)
+	public String showProfile(Model model,@RequestParam(value="username") String username){
 		Profile profile = profileService.loadProfile(username);
+		System.out.println("user:"+profile.getUserName());
+		System.out.println("firstname:"+profile.getFirstName());
+		System.out.println("lastname:" + profile.getLastName());
+		System.out.println("email:"+profile.getEmail());
+		System.out.println("phone:"+profile.getPhone());
 		model.addAttribute("profile", profile);
 		return "profile";
 	}

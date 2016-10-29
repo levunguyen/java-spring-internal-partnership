@@ -8,8 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "profile")
 public class Profile {
-	@Id
-	@Column(name = "username")
+	@Id@Column(name="username")
 	private String userName;
 	@Column(name = "firstname")
 	private String firstName;
@@ -72,6 +71,8 @@ public class Profile {
 		this.image = image;
 	}
 	
-	
+	public Profile(){
+		
+	}
 
 }
