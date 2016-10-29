@@ -12,7 +12,6 @@ import javax.persistence.Table;
 public class Project {
 
 	@Id
-	@Column
 	private int id;
 	@Column(name="name")
 	private String name;
@@ -20,14 +19,10 @@ public class Project {
 	private Date startDate;
 	@Column(name="endDate")
 	private Date endDate;
-	@Column(name="email")
-	private String email;
-	@Column(name="business")
-	private String business;
-	@Column(name="phone")
-	private int phone;
 	@Column
 	private String discrible;
+	@Column
+	private int status;
 	public int getId() {
 		return id;
 	}
@@ -52,47 +47,31 @@ public class Project {
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getBusiness() {
-		return business;
-	}
-	public void setBusiness(String business) {
-		this.business = business;
-	}
-	public int getPhone() {
-		return phone;
-	}
-	public void setPhone(int phone) {
-		this.phone = phone;
-	}
 	public String getDiscrible() {
 		return discrible;
 	}
 	public void setDiscrible(String discrible) {
 		this.discrible = discrible;
 	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
 	@Override
 	public String toString() {
-		return "Project [id=" + id + ", name=" + name + ", startDate=" + startDate + ", endDate=" + endDate + ", email="
-				+ email + ", business=" + business + ", phone=" + phone + ", discrible=" + discrible + "]";
+		return "Project [id=" + id + ", name=" + name + ", startDate=" + startDate + ", endDate=" + endDate
+				+ ", discrible=" + discrible + ", status=" + status + "]";
 	}
-	public Project(int id, String name, Date startDate, Date endDate, String email, String business, int phone,
-			String discrible) {
+	public Project(int id, String name, Date startDate, Date endDate, String discrible, int status) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.startDate = startDate;
 		this.endDate = endDate;
-		this.email = email;
-		this.business = business;
-		this.phone = phone;
 		this.discrible = discrible;
+		this.status = status;
 	}
-	
 	
 }

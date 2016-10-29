@@ -23,7 +23,6 @@ public class ProjectServiceImpl implements ProjectService{
 		Project project=repository.findOne(id);
 		if (project != null) {
 			project.setName("project PHP");
-			project.setEmail("support@gmail.com");
 			repository.save(project);
 			return true;
 		}else{

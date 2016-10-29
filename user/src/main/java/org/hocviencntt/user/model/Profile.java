@@ -20,25 +20,23 @@ public class Profile {
 	private String phone;
 	@Column
 	private String image;
-	
-
 	public String getUserName() {
 		return userName;
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getFirstname() {
+	public String getFirstName() {
 		return firstName;
 	}
-	public void setFirstname(String firstname) {
-		this.firstName = firstname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String getLastname() {
+	public String getLastName() {
 		return lastName;
 	}
-	public void setLastname(String lastname) {
-		this.lastName = lastname;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	public String getEmail() {
 		return email;
@@ -60,18 +58,19 @@ public class Profile {
 	}
 	@Override
 	public String toString() {
-		return "Profile [user=" + userName + ", firstname=" + firstName + ", lastname=" + lastName + ", email=" + email
-				+ ", phone=" + phone + ", image=" + image + "]";
+		return "Profile [userName=" + userName + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
+				+ email + ", phone=" + phone + ", image=" + image + "]";
 	}
-	public Profile(String user, String firstname, String lastname, String email, String phone, String image) {
+	public Profile(String userName, String firstName, String lastName, String email, String phone, String image) {
 		super();
-		this.userName = user;
-		this.firstName = firstname;
-		this.lastName = lastname;
+		this.userName = userName;
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.email = email;
 		this.phone = phone;
 		this.image = image;
 	}
 	
 	
+
 }
