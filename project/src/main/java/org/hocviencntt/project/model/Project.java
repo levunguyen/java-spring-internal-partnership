@@ -26,6 +26,8 @@ public class Project {
 	private String business;
 	@Column(name="phone")
 	private int phone;
+	@Column
+	private String discrible;
 	public int getId() {
 		return id;
 	}
@@ -68,4 +70,29 @@ public class Project {
 	public void setPhone(int phone) {
 		this.phone = phone;
 	}
+	public String getDiscrible() {
+		return discrible;
+	}
+	public void setDiscrible(String discrible) {
+		this.discrible = discrible;
+	}
+	@Override
+	public String toString() {
+		return "Project [id=" + id + ", name=" + name + ", startDate=" + startDate + ", endDate=" + endDate + ", email="
+				+ email + ", business=" + business + ", phone=" + phone + ", discrible=" + discrible + "]";
+	}
+	public Project(int id, String name, Date startDate, Date endDate, String email, String business, int phone,
+			String discrible) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.email = email;
+		this.business = business;
+		this.phone = phone;
+		this.discrible = discrible;
+	}
+	
+	
 }

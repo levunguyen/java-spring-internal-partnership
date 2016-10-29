@@ -9,15 +9,15 @@ import javax.persistence.Table;
 @Table(name= "user")
 public class User {
 	@Id
-	private String username;
+	private String userName;
 	@Column
 	private String password;
 	
 	public String getUsername() {
-		return username;
+		return userName;
 	}
 	public void setUsername(String username) {
-		this.username = username;
+		this.userName = username;
 	}
 	public String getPassword() {
 		return password;
@@ -27,11 +27,11 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [username=" + username + ", password=" + password + "]";
+		return "User [username=" + userName + ", password=" + password + "]";
 	}
 	public User(String username, String password) {
 		super();
-		this.username = username;
+		this.userName = username;
 		this.password = password;
 	}
 	
