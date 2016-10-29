@@ -22,4 +22,11 @@ public class ProjectController {
 		return "HomeError";
 		}
 	}
+	@RequestMapping(value="/deleteproject",method=RequestMethod.GET)
+	public String deleteProject(@RequestParam(value="id") int id){
+		if (projectService.deleteProject(id)) {
+			return "listProject";
+		}
+		return "HomeError";
+	}
 }

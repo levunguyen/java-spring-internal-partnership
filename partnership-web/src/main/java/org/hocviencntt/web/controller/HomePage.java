@@ -16,10 +16,7 @@ public class HomePage {
 	@Autowired
 	UserService userService;
 
-/*	@RequestMapping(value="/home",method =RequestMethod.GET)
-	public String homePage(){
-		return "home";
-	}*/
+
 
    @RequestMapping(value ="/", method = RequestMethod.GET)
    public String homePage(Model model) {
