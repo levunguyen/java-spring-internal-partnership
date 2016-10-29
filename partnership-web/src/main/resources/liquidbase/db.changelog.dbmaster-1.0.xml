@@ -54,7 +54,7 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 				<constraints primaryKey="true" nullable="false" />
 			</column>
 			<column name="name" type="VARCHAR(45)" />
-			<column name="experence" type="VARCHAR(45)" />
+			<column name="experience" type="VARCHAR(45)" />
 			<column name="startday" type="DATE" />
 			<column name="username" type="VARCHAR(45)" />
 		</createTable>
