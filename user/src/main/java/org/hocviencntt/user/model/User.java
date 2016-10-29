@@ -9,30 +9,31 @@ import javax.persistence.Table;
 @Table(name= "user")
 public class User {
 	@Id
-	private String username;
-	@Column
-	private String password;
+	@Column(name= "username")
+	private String userName;
+	@Column(name = "password" )
+	private String passWord;
 	
 	public String getUsername() {
-		return username;
+		return userName;
 	}
 	public void setUsername(String username) {
-		this.username = username;
+		this.userName = username;
 	}
 	public String getPassword() {
-		return password;
+		return passWord;
 	}
 	public void setPassword(String password) {
-		this.password = password;
+		this.passWord = password;
 	}
 	@Override
 	public String toString() {
-		return "User [username=" + username + ", password=" + password + "]";
+		return "User [username=" + userName + ", password=" + passWord + "]";
 	}
 	public User(String username, String password) {
 		super();
-		this.username = username;
-		this.password = password;
+		this.userName = username;
+		this.passWord = password;
 	}
 	
 }
