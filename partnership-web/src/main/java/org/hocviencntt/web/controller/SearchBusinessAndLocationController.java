@@ -15,25 +15,25 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class SearchBusinessAndLocationController {
 
-//	@Autowired
-//	private BusinessService businessService;
-//	
-//	@Autowired
-//	private LocationService locationService;
-//	
-//	@RequestMapping(value = "/findBusiness", method = RequestMethod.GET)
-//	public String findBusiness(@RequestParam("name") String name, Model model) {
-//		List<Business> listBusinesses=businessService.findBusiness(name);
-//		model.addAttribute("allOfBusiness", listBusinesses);
-//		return "suggest-daily";
-//	} 
-//	
-//	//?????
-//	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
-//	public String findLocation(@RequestParam("username")String city,Model model){
-//		List<Location> listLocations=locationService.findByLocation(city);
-//		model.addAttribute("allOfLocation",listLocations);
-//		return "suggest-daily";
-//		
-//	}
+	@Autowired
+	private BusinessService businessService;
+	
+	@Autowired
+	private LocationService locationService;
+	
+	@RequestMapping(value = "/findbusiness", method = RequestMethod.GET)
+	public String findBusiness(@RequestParam("name") String name, Model model) {
+		List<Business> listBusinesses=businessService.findByBusiness(name);
+		model.addAttribute("allOfBusiness", listBusinesses);
+		return "listView";
+	} 
+	
+
+	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
+		public String findLocation(@RequestParam("city")String city,Model model){
+		List<Location> listLocations=locationService.findByLocation(city);
+		model.addAttribute("allOfLocation",listLocations);
+		return "listView";
+		
+	}
 }

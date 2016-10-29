@@ -16,7 +16,7 @@ public class Location implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	private int id;
-	@Column(name="country")
+	@Column
 	private String country;
 	@Column
 	private String city;
@@ -28,7 +28,7 @@ public class Location implements Serializable {
 	private int zipcode;
 	@Column(name="username")
 	private String userName;
-	public Location(int id, String country, String city, String street, String number, int zipcode, String username) {
+	public Location(int id, String country, String city, String street, String number, int zipcode, String userName) {
 		super();
 		this.id = id;
 		this.country = country;
@@ -36,7 +36,7 @@ public class Location implements Serializable {
 		this.street = street;
 		this.number = number;
 		this.zipcode = zipcode;
-		this.userName = username;
+		this.userName = userName;
 	}
 	public int getId() {
 		return id;
@@ -74,20 +74,22 @@ public class Location implements Serializable {
 	public void setZipcode(int zipcode) {
 		this.zipcode = zipcode;
 	}
-	public String getUsername() {
+	public String getUserName() {
 		return userName;
 	}
-	public void setUsername(String username) {
-		this.userName = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 	@Override
 	public String toString() {
 		return "Location [id=" + id + ", country=" + country + ", city=" + city + ", street=" + street + ", number="
-				+ number + ", zipcode=" + zipcode + ", username=" + userName + "]";
+				+ number + ", zipcode=" + zipcode + ", userName=" + userName + "]";
 	}
-
 	public Location() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
 }

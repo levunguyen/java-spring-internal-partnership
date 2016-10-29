@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+@Entity(name="business")
 @Table(name="business")
 public class Business {
 	
@@ -17,8 +17,8 @@ public class Business {
 	private String name;
 	@Column
 	private String experience;
-	@Column
-	private Date startday;
+	@Column(name="startday")
+	private Date startDay;
 	@Column(name="username")
 	private String userName;
 	public Business(int id, String name, String experience, Date startday, String userName) {
@@ -26,12 +26,12 @@ public class Business {
 		this.id = id;
 		this.name = name;
 		this.experience = experience;
-		this.startday = startday;
+		this.startDay = startday;
 		this.userName = userName;
 	}
 	@Override
 	public String toString() {
-		return "Business [id=" + id + ", name=" + name + ", experience=" + experience + ", startday=" + startday
+		return "Business [id=" + id + ", name=" + name + ", experience=" + experience + ", startday=" + startDay
 				+ ", userName=" + userName + "]";
 	}
 	public int getId() {
@@ -53,16 +53,19 @@ public class Business {
 		this.experience = experience;
 	}
 	public Date getStartday() {
-		return startday;
+		return startDay;
 	}
 	public void setStartday(Date startday) {
-		this.startday = startday;
+		this.startDay = startday;
 	}
 	public String getUserName() {
 		return userName;
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	public Business() {
+		// TODO Auto-generated constructor stub
 	}
 	
 }

@@ -110,6 +110,26 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 			<column name="phone" value="0905747851"></column>
 		</insert>
 	</changeSet>
+	<changeSet id="t1" author="tien">
+		<insert tableName="business">
+			<column name="id" value="1"></column>
+			<column name="name" value="Development"></column>
+			<column name="experience" value="3years"></column>
+			<column name="username" value="admin"></column>
+		</insert>
+	</changeSet>
+	<changeSet id="t2" author="tien">
+		<insert tableName="location">
+			<column name="id" value="1"></column>
+			<column name="country" value="VietNam"></column>
+			<column name="city" value="DaNang"></column>
+			<column name="street" value="LeDuan"></column>
+			<column name="number" value="2"></column>
+			<column name="zipcode" value="43"></column>
+			<column name="username" value="admin"></column>
+		</insert>
+	</changeSet>
+	
 	
 	<changeSet author="Huy (generated)" id="4">
 		<tagDatabase tag="version_1.0" />
