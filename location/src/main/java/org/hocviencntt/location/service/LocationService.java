@@ -5,5 +5,5 @@ import java.util.List;
 import org.hocviencntt.location.model.Location;
 public interface LocationService {
 
-	public List<Location> findByLocation(String country);
+	public List<Location> findByLocation(String city);
 }

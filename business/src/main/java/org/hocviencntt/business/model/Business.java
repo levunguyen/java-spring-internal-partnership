@@ -16,16 +16,16 @@ public class Business {
 	@Column
 	private String name;
 	@Column
-	private String experence;
+	private String experience;
 	@Column
 	private Date start;
 	@Column
 	private String username;
-	public Business(int id, String name, String experence, Date start, String username) {
+	public Business(int id, String name, String experience, Date start, String username) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.experence = experence;
+		this.experience = experience;
 		this.start = start;
 		this.username = username;
 	}
@@ -41,11 +41,11 @@ public class Business {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getExperence() {
-		return experence;
+	public String getExperience() {
+		return experience;
 	}
-	public void setExperence(String experence) {
-		this.experence = experence;
+	public void setExperience(String experience) {
+		this.experience = experience;
 	}
 	public Date getStart() {
 		return start;
@@ -61,7 +61,7 @@ public class Business {
 	}
 	@Override
 	public String toString() {
-		return "Business [id=" + id + ", name=" + name + ", experence=" + experence + ", start=" + start + ", username="
+		return "Business [id=" + id + ", name=" + name + ", experence=" + experience + ", start=" + start + ", username="
 				+ username + "]";
 	}
 	

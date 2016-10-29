@@ -9,6 +9,6 @@ import org.springframework.data.repository.query.Param;
 
 public interface LocationRepository extends JpaRepository<Location, String> {
 
-	@Query("select l from Location l where l.country=:country")
-	public List<Location> findByLocation(@Param("country")String country) ;
+	@Query("select l from Location l where l.city=:city")
+	public List<Location> findByLocation(@Param("city")String city) ;
 }
