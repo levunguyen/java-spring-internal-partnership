@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.apache.catalina.User;
-
 @Entity
 @Table(name="project")
 public class Project {
