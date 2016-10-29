@@ -8,8 +8,8 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 	<!-- Create User table -->
 	<changeSet author="Huy (generated)" id="1"
 		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<createTable tableName="User">
-			<column name="userName" type="VARCHAR(45)">
+		<createTable tableName="user">
+			<column name="username" type="VARCHAR(45)">
 				<constraints primaryKey="true" nullable="false" />
 			</column>
 			<column name="password" type="VARCHAR(45)" />	
@@ -19,13 +19,13 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 	<!-- Create Profile table -->
 	<changeSet author="Huy (generated)" id="2"
 		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<createTable tableName="Profile">
-			<column name="firstName" type="VARCHAR(45)"></column>
-			<column name="lastName" type="VARCHAR(45)" />
+		<createTable tableName="profile">
+			<column name="firstname" type="VARCHAR(45)"></column>
+			<column name="lastname" type="VARCHAR(45)" />
 			<column name="image" type="VARCHAR(100)" />
 			<column name="email" type="VARCHAR(50)" />	
 			<column name="phone" type="VARCHAR(45)" />	
-			<column name="userName" type="VARCHAR(45)">
+			<column name="username" type="VARCHAR(45)">
 				<constraints primaryKey="true" nullable="false" />
 			</column>	
 		</createTable>
@@ -34,19 +34,16 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 	<!-- Create Project table -->
 	<changeSet author="Huy (generated)" id="3"
 		objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<createTable tableName="Project">
+		<createTable tableName="project">
 			<column name="id" type="INT" autoIncrement="true">
 				<constraints primaryKey="true" nullable="false" />
 			</column>
 			<column name="name" type="VARCHAR(45)" />
-			<column name="startDate" type="datetime" />
-			<column name="endDate" type="datetime" />	
+			<column name="startdate" type="DATE" />
+			<column name="enddate" type="DATE" />	
 			<column name="discrible" type="VARCHAR(45)" />
 			<column name="status" type="INT" />
-			<column name="userName" type="VARCHAR(45)">
-				<constraints nullable="false" foreignKeyName="fk_project_user"
-					references="User(userName)" />
-			</column>		
+			<column name="username" type="VARCHAR(45)"></column>		
 		</createTable>
 	</changeSet>
 
@@ -58,10 +55,8 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 			</column>
 			<column name="name" type="VARCHAR(45)" />
 			<column name="experence" type="VARCHAR(45)" />
-			<column name="start" type="datetime" />
+			<column name="startday" type="DATE" />
 			<column name="username" type="VARCHAR(45)" />
-
-
 		</createTable>
 	</changeSet>
 	<changeSet author="rin (generated)" id="6"
@@ -86,8 +81,8 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 				<constraints primaryKey="true" nullable="false" />
 			</column>
 			<column name="comment" type="VARCHAR(14500)" />
-			<column name="date" type="VARCHAR(45)" />
-			<column name="commentBy" type="VARCHAR(45)" />
+			<column name="date" type="DATETIME" />
+			<column name="comment_by" type="VARCHAR(45)" />
 			<column name="username" type="VARCHAR(45)" />
 
 
@@ -108,9 +103,9 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 	
 	<changeSet id="p2" author="phuong">
 		<insert tableName="profile">
-			<column name="userName" value="admin"></column>
-			<column name="firstName" value="Quang"></column>
-			<column name="lastName" value="Phuong"></column>
+			<column name="username" value="admin"></column>
+			<column name="firstname" value="Quang"></column>
+			<column name="lastname" value="Phuong"></column>
 			<column name="email" value="phuongnq.itedu@gmail.com"></column>
 			<column name="phone" value="0905747851"></column>
 		</insert>
