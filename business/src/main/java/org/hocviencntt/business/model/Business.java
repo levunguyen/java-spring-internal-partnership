@@ -18,16 +18,21 @@ public class Business {
 	@Column
 	private String experience;
 	@Column
-	private Date start;
+	private Date startday;
 	@Column(name="username")
 	private String userName;
-	public Business(int id, String name, String experience, Date start, String username) {
+	public Business(int id, String name, String experience, Date startday, String userName) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.experience = experience;
-		this.start = start;
-		this.userName = username;
+		this.startday = startday;
+		this.userName = userName;
+	}
+	@Override
+	public String toString() {
+		return "Business [id=" + id + ", name=" + name + ", experience=" + experience + ", startday=" + startday
+				+ ", userName=" + userName + "]";
 	}
 	public int getId() {
 		return id;
@@ -47,25 +52,17 @@ public class Business {
 	public void setExperience(String experience) {
 		this.experience = experience;
 	}
-	public Date getStart() {
-		return start;
+	public Date getStartday() {
+		return startday;
 	}
-	public void setStart(Date start) {
-		this.start = start;
+	public void setStartday(Date startday) {
+		this.startday = startday;
 	}
-	public String getUsername() {
+	public String getUserName() {
 		return userName;
 	}
-	public void setUsername(String username) {
-		this.userName = username;
-	}
-	@Override
-	public String toString() {
-		return "Business [id=" + id + ", name=" + name + ", experence=" + experience + ", start=" + start + ", username="
-				+ userName + "]";
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	
-	public Business() {
-		// TODO Auto-generated constructor stub
-	}
 }
