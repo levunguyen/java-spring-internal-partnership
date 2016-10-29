@@ -35,5 +35,8 @@ public class User {
 		this.userName = username;
 		this.passWord = password;
 	}
+	public User(){
+		
+	}
 	
 }

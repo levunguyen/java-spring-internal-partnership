@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class LocationServiceImpl implements LocationService {
 
-	@Autowired
-	LocationRepository locationRepository;
-
-	public List<Location> findByLocation(String city) {
-		// TODO Auto-generated method stub
-		return locationRepository.findByLocation(city);
-	}
+//	@Autowired
+//	LocationRepository locationRepository;
+//
+//	public List<Location> findByLocation(String city) {
+//		// TODO Auto-generated method stub
+//		return locationRepository.findByLocation(city);
+//	}
 
 	
 

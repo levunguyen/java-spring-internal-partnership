@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
-	@Autowired
-	UserRepository userRepository;
-	
-	public List<User> findPartnerSuggest(){
-		
-		return userRepository.findAll();
-		
-	}
+//	@Autowired
+//	UserRepository userRepository;
+//	
+//	public List<User> findPartnerSuggest(){
+//		
+//		return userRepository.findAll();
+//		
+//	}
 	
 }

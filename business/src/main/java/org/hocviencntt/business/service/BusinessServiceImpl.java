@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class BusinessServiceImpl implements BusinessService {
 
-	@Autowired
-	BusinessRepository businessRepository;
+//	@Autowired
+//	BusinessRepository businessRepository;
 
-	public List<Business> findBusiness(String name) {
-		// TODO Auto-generated method stub
-		return businessRepository.findByBusiness(name);
-	}
+//	public List<Business> findBusiness(String name) {
+//		// TODO Auto-generated method stub
+//		return businessRepository.findByBusiness(name);
+//	}
 
 	
 

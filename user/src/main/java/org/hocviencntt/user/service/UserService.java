@@ -5,5 +5,5 @@ import java.util.List;
 import org.hocviencntt.user.model.User;
 
 public interface UserService {
-	public List<User> findPartnerSuggest();
+//	public List<User> findPartnerSuggest();
 }

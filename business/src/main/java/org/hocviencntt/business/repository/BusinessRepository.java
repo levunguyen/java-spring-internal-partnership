@@ -9,6 +9,6 @@ import org.springframework.data.repository.query.Param;
 
 public interface BusinessRepository extends JpaRepository<Business, Integer> {
 
-	@Query("select b from business b where b.name=:name")
-	public List<Business> findByBusiness(@Param("name")String name) ;
+//	@Query("select b from business b where b.name=:name")
+//	public List<Business> findByBusiness(@Param("name")String name) ;
 }
