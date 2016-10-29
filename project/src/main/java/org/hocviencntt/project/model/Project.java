@@ -1,11 +1,13 @@
 package org.hocviencntt.project.model;
 
-import java.sql.Date;
+import java.sql.Date; 
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.apache.catalina.User;
 
 @Entity
 @Table(name="project")
@@ -23,7 +25,8 @@ public class Project {
 	private String discrible;
 	@Column(name="status")
 	private int status;
-
+	@Column(name="username")
+	private String userName;
 	public int getId() {
 		return id;
 	}
@@ -60,19 +63,13 @@ public class Project {
 	public void setStatus(int status) {
 		this.status = status;
 	}
-	@Override
-	public String toString() {
-		return "Project [id=" + id + ", name=" + name + ", startDate=" + startDate + ", endDate=" + endDate
-				+ ", discrible=" + discrible + ", status=" + status + "]";
+	public String getUserName() {
+		return userName;
 	}
-	public Project(int id, String name, Date startDate, Date endDate, String discrible, int status) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.startDate = startDate;
-		this.endDate = endDate;
-		this.discrible = discrible;
-		this.status = status;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
+
+	
 	
 }
