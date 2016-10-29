@@ -9,9 +9,9 @@ import javax.persistence.Table;
 @Table(name = "profile")
 public class Profile {
 	@Id
-	private String userName;
+	private String username;
 	@Column
-	private String firstName;
+	private String firstname;
 	@Column
 	private String lastName;
 	@Column
@@ -21,16 +21,16 @@ public class Profile {
 	@Column
 	private String image;
 	public String getUserName() {
-		return userName;
+		return username;
 	}
 	public void setUserName(String userName) {
-		this.userName = userName;
+		this.username = userName;
 	}
 	public String getFirstName() {
-		return firstName;
+		return firstname;
 	}
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		this.firstname = firstName;
 	}
 	public String getLastName() {
 		return lastName;
@@ -58,14 +58,14 @@ public class Profile {
 	}
 	@Override
 	public String toString() {
-		return "Profile [userName=" + userName + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
+		return "Profile [userName=" + username + ", firstName=" + firstname + ", lastName=" + lastName + ", email="
 				+ email + ", phone=" + phone + ", image=" + image + "]";
 	}
-	public Profile(String userName, String firstName, String lastName, String email, String phone, String image) {
+	public Profile(String username, String firstname, String lastname, String email, String phone, String image) {
 		super();
-		this.userName = userName;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.username = username;
+		this.firstname = firstname;
+		this.lastName = lastname;
 		this.email = email;
 		this.phone = phone;
 		this.image = image;
