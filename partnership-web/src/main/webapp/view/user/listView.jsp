@@ -27,53 +27,31 @@
 			<thead>
 				<tr id="listShopView">
 					<th>ID</th>
+					<th>Username</th>
 					<th>Name</th>
 					<th>Experience</th>
-					<th>Startday</th>
-					<th>Username</th>
+					<th>Country</th>
+					<th>City</th>
+					
 				</tr>
 			</thead>
 
 			<c:forEach var="listBusinesses" items="${allOfBusiness}">
+				<c:forEach var="listLocations" items="${allOfLocation}">
 				<tbody>
 					<tr>
 						<td>${listBusinesses.id}</td>
+						<td>${listLocations.userName}</td>
 						<td>${listBusinesses.name}</td>
 						<td>${listBusinesses.experience}</td>
-						<td>${listBusinesses.startday}</td>
-						<td>${listBusinesses.userName}</td>
-					</tr>
-				</tbody>
-			</c:forEach>
-		</table>
-<table class="table table-hover " width="500px">
-			<thead>
-				<tr id="listShopView">
-					<th>ID</th>
-					<th>country</th>
-					<th>city</th>
-					<th>street</th>
-					<th>number</th>
-					<th>zipcode</th>
-					<th>userName</th>
-				</tr>
-			</thead>
-
-			<c:forEach var="listLocations" items="${allOfLocation}">
-				<tbody>
-					<tr>
-						<td>${listLocations.id}</td>
 						<td>${listLocations.country}</td>
 						<td>${listLocations.city}</td>
-						<td>${listLocations.street}</td>
-						<td>${listLocations.number}</td>
-						<td>${listLocations.zipcode}</td>
-						<td>${listLocations.userName}</td>
 					</tr>
-
 				</tbody>
+				</c:forEach>
 			</c:forEach>
 		</table>
+
 	</div>
 </body>
 </html>
