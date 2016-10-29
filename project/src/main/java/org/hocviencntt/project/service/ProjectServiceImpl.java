@@ -18,8 +18,16 @@ public class ProjectServiceImpl implements ProjectService{
 		return true;
 	}
 
-	
-	
-	
-
+	/*update project*/
+	public boolean updateProject(int id) {
+		Project project=repository.findOne(id);
+		if (project != null) {
+			project.setName("project PHP");
+			project.setEmail("support@gmail.com");
+			repository.save(project);
+			return true;
+		}else{
+			return false;
+		}	
+	}
 }
