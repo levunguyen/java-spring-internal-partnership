@@ -30,8 +30,8 @@ public class SearchBusinessAndLocationController {
 	
 	//?????
 	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
-	public String findLocation(@RequestParam("username")String country,Model model){
-		List<Location> listLocations=locationService.findByLocation(country);
+	public String findLocation(@RequestParam("username")String city,Model model){
+		List<Location> listLocations=locationService.findByLocation(city);
 		model.addAttribute("allOfLocation",listLocations);
 		return "suggest-daily";
 		

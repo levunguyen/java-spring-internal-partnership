@@ -12,9 +12,9 @@ public class LocationServiceImpl implements LocationService {
 	@Autowired
 	LocationRepository locationRepository;
 
-	public List<Location> findByLocation(String country) {
+	public List<Location> findByLocation(String city) {
 		// TODO Auto-generated method stub
-		return locationRepository.findByLocation(country);
+		return locationRepository.findByLocation(city);
 	}
 
 	
