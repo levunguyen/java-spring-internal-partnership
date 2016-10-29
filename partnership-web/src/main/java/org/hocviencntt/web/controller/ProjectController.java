@@ -25,8 +25,9 @@ public class ProjectController {
 	@RequestMapping(value="/deleteproject",method=RequestMethod.GET)
 	public String deleteProject(@RequestParam(value="id") int id){
 		if (projectService.deleteProject(id)) {
-			return "listProject";
+			return "listResult";
 		}
 		return "HomeError";
 	}
+	
 }

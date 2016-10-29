@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+/*!
+ * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/*!
+ * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background-color: whitesmoke;
+}
+.img-responsive{
+	width: 30em;
+	height: 12em;
+}
+.search{
+	background-color: white;
+	position: relative;
+}
+.list {
+	padding-left: 3em;
+	margin-top: 5em;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.media-body .glyphicon{
+	height: 1.5em;
+}
+.local{
+	height: 200em;
+	width: 200em;
+}
+.detal{
+	padding-left: 2em;
+}
+
+footer {
+    margin: 50px 0;
+}
