@@ -13,7 +13,7 @@ public class Profile {
 	@Column
 	private String firstname;
 	@Column
-	private String lastName;
+	private String lastname;
 	@Column
 	private String email;
 	@Column
@@ -33,10 +33,10 @@ public class Profile {
 		this.firstname = firstName;
 	}
 	public String getLastName() {
-		return lastName;
+		return lastname;
 	}
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastname = lastName;
 	}
 	public String getEmail() {
 		return email;
@@ -58,14 +58,14 @@ public class Profile {
 	}
 	@Override
 	public String toString() {
-		return "Profile [userName=" + username + ", firstName=" + firstname + ", lastName=" + lastName + ", email="
+		return "Profile [userName=" + username + ", firstName=" + firstname + ", lastName=" + lastname + ", email="
 				+ email + ", phone=" + phone + ", image=" + image + "]";
 	}
 	public Profile(String username, String firstname, String lastname, String email, String phone, String image) {
 		super();
 		this.username = username;
 		this.firstname = firstname;
-		this.lastName = lastname;
+		this.lastname = lastname;
 		this.email = email;
 		this.phone = phone;
 		this.image = image;
