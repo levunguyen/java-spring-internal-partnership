@@ -15,14 +15,15 @@ public class Project {
 	private int id;
 	@Column(name="name")
 	private String name;
-	@Column(name="startDate")
+	@Column(name="startdate")
 	private Date startDate;
-	@Column(name="endDate")
+	@Column(name="enddate")
 	private Date endDate;
-	@Column
+	@Column(name="discrible")
 	private String discrible;
-	@Column
+	@Column(name="status")
 	private int status;
+
 	public int getId() {
 		return id;
 	}
