@@ -16,7 +16,7 @@ public class Location implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	private int id;
-	@Column
+	@Column(name="country")
 	private String country;
 	@Column
 	private String city;
@@ -26,8 +26,8 @@ public class Location implements Serializable {
 	private String number;
 	@Column
 	private int zipcode;
-	@Column
-	private String username;
+	@Column(name="username")
+	private String userName;
 	public Location(int id, String country, String city, String street, String number, int zipcode, String username) {
 		super();
 		this.id = id;
@@ -36,7 +36,7 @@ public class Location implements Serializable {
 		this.street = street;
 		this.number = number;
 		this.zipcode = zipcode;
-		this.username = username;
+		this.userName = username;
 	}
 	public int getId() {
 		return id;
@@ -75,15 +75,15 @@ public class Location implements Serializable {
 		this.zipcode = zipcode;
 	}
 	public String getUsername() {
-		return username;
+		return userName;
 	}
 	public void setUsername(String username) {
-		this.username = username;
+		this.userName = username;
 	}
 	@Override
 	public String toString() {
 		return "Location [id=" + id + ", country=" + country + ", city=" + city + ", street=" + street + ", number="
-				+ number + ", zipcode=" + zipcode + ", username=" + username + "]";
+				+ number + ", zipcode=" + zipcode + ", username=" + userName + "]";
 	}
 
 	public Location() {

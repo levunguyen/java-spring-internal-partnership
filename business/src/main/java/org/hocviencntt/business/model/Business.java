@@ -19,15 +19,15 @@ public class Business {
 	private String experience;
 	@Column
 	private Date start;
-	@Column
-	private String username;
+	@Column(name="username")
+	private String userName;
 	public Business(int id, String name, String experience, Date start, String username) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.experience = experience;
 		this.start = start;
-		this.username = username;
+		this.userName = username;
 	}
 	public int getId() {
 		return id;
@@ -54,15 +54,15 @@ public class Business {
 		this.start = start;
 	}
 	public String getUsername() {
-		return username;
+		return userName;
 	}
 	public void setUsername(String username) {
-		this.username = username;
+		this.userName = username;
 	}
 	@Override
 	public String toString() {
 		return "Business [id=" + id + ", name=" + name + ", experence=" + experience + ", start=" + start + ", username="
-				+ username + "]";
+				+ userName + "]";
 	}
 	
 	public Business() {
