@@ -22,16 +22,16 @@ public class SearchBusinessAndLocationController {
 	private LocationService locationService;
 	
 	@RequestMapping(value = "/findBusiness", method = RequestMethod.GET)
-	public String findBusiness(@RequestParam("username") String username, Model model) {
-		List<Business> listBusinesses=businessService.findByUserName(username);
+	public String findBusiness(@RequestParam("name") String name, Model model) {
+		List<Business> listBusinesses=businessService.findBusiness(name);
 		model.addAttribute("allOfBusiness", listBusinesses);
 		return "suggest-daily";
-	} //User lấy ở đâu ra??
+	} 
 	
 	//?????
 	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
-	public String findLocation(@RequestParam("username")String username,Model model){
-		List<Location> listLocations=locationService.findByUserName(username);
+	public String findLocation(@RequestParam("username")String country,Model model){
+		List<Location> listLocations=locationService.findByLocation(country);
 		model.addAttribute("allOfLocation",listLocations);
 		return "suggest-daily";
 		

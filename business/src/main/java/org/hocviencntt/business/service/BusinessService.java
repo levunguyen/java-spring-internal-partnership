@@ -6,5 +6,5 @@ import org.hocviencntt.business.model.Business;
 
 public interface BusinessService {
 
-	public List<Business> findByUserName(String username);
+	public List<Business> findBusiness(String name);
 }
