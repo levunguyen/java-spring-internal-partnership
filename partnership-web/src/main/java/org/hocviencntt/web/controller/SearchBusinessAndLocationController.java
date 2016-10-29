@@ -21,13 +21,20 @@ public class SearchBusinessAndLocationController {
 	@Autowired
 	private LocationService locationService;
 	
+//	public List<String> usernames;
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public String searchBusinessAndLocation(@RequestParam("name") String name,@RequestParam("city") String city, Model model) {
 		List<Business> listBusinesses=businessService.findByBusiness(name);
 		List<Location> listLocations=locationService.findByLocation(city);
+	//	usernames=null;
 		for(Business business:listBusinesses){
 			for(Location location:listLocations){
 				if(business.getUserName().equals(location.getUserName())){
+					//  usernames.add(location.getUserName());
+					//	usernames.add(location.getCountry());
+					//	usernames.add(location.getCity());
+					//	usernames.add(business.getName());
+					//	usernames.add(business.getExperience());
 					model.addAttribute("allOfBusiness", listBusinesses);
 					model.addAttribute("allOfLocation",listLocations);
 				}

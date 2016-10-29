@@ -41,7 +41,7 @@
 				<tbody>
 					<tr>
 						<td>${listBusinesses.id}</td>
-						<td>${listLocations.userName}</td>
+						<td>${listBusinesses.userName}</td>
 						<td>${listBusinesses.name}</td>
 						<td>${listBusinesses.experience}</td>
 						<td>${listLocations.country}</td>
