@@ -21,6 +21,14 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 	 referencedColumnNames="userName"
 	 referencedTableName="user"/>
 </changeSet>
+<changeSet id="3" author="hoang(create relationship)">
+	<addForeignKeyConstraint
+	 constraintName="fk_project_username"
+	 baseColumnNames="userName" 
+	 baseTableName="location"
+	 referencedColumnNames="userName"
+	 referencedTableName="user"/>
+</changeSet>
 	
 	
 	
