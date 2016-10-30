@@ -17,7 +17,10 @@ public class ProjectServiceImpl implements ProjectService{
 		repository.delete(id);;
 		return true;
 	}
-
+	//find a project by Id
+	public Project findProject(int id){
+		return repository.findOne(id);
+	}
 	/*update project*/
 	public boolean updateProject(int id) {
 		Project project=repository.findOne(id);
