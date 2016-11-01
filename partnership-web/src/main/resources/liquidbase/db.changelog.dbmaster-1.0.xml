@@ -165,6 +165,20 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 		<addForeignKeyConstraint constraintName="fk_profile_user" referencedTableName="user" 
 		baseColumnNames="username" baseTableName="profile" referencedColumnNames="username"/>
 	</changeSet>
+	<changeSet id="h3" author="Ha">
+		<insert tableName="user">
+			<column name="username" value="batcandoi"></column>
+			<column name="password" value="admin"></column>
+		</insert>
+		<insert tableName="user">
+			<column name="username" value="Havannguyen"></column>
+			<column name="password" value="admin"></column>
+		</insert>
+		<insert tableName="user">
+			<column name="username" value="Nguyen Van Ha"></column>
+			<column name="password" value="12345"></column>
+		</insert>		
+	</changeSet>
 	
 	<changeSet author="Huy (generated)" id="4">
 		<tagDatabase tag="version_1.0" />

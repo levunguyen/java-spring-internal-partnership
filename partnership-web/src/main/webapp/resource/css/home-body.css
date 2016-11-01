@@ -114,7 +114,7 @@ section article .bacground-search .slide img{
     margin: 0 5%;
 	z-index: 3;
 	height: 6em;    
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     
     /*----------------------ANIMATION------------------------*/
     -webkit-transition: top 500ms ease;
@@ -144,8 +144,8 @@ section article .bacground-search .slide img{
 .form-search{
 	display: block;
 	width: 100%;
-	margin: 0.5em auto;
-	height: 5em;
+	margin: 1em auto;
+	height: 4em;
 	opacity: 1;
 	padding-right: 0.5em;
 	float:right;
@@ -182,15 +182,17 @@ section article .bacground-search .slide img{
 	margin-left: 0;
 }
 .search-business i, .search-location i {
-	width: 10%;
-	margin-top: 0.2em;
+	width: 15%;	
+	margin-left: 0.2em;
+/* 	margin-top: 0.2em; */
 	box-sizing: border-box;
 }
 .search-business input, .search-location input{
-	width: 85%;
+	width: 80%;
 	border: none;
-	height: 80%;
+	height: 90%;
 	font-size: 1.4em;
+	box-sizing: border-box;
 }
 .search-business input:focus, .search-location input:focus{
 	outline: 0;
