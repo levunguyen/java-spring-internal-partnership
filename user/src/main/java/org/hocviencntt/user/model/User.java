@@ -8,24 +8,25 @@ import javax.persistence.Table;
 @Entity
 @Table(name= "user")
 public class User {
-	@Id
-	@Column(name= "username")
+	@Id@Column(name= "username")
 	private String userName;
 	@Column(name = "password" )
 	private String passWord;
 	
-	public String getUsername() {
+	
+	public String getUserName() {
 		return userName;
 	}
-	public void setUsername(String username) {
-		this.userName = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public String getPassword() {
+	public String getPassWord() {
 		return passWord;
 	}
-	public void setPassword(String password) {
-		this.passWord = password;
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
 	}
+	
 	@Override
 	public String toString() {
 		return "User [username=" + userName + ", password=" + passWord + "]";

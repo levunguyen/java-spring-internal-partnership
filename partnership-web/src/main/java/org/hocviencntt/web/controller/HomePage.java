@@ -20,8 +20,8 @@ public class HomePage {
 
    @RequestMapping(value ="/", method = RequestMethod.GET)
    public String homePage(Model model) {
-//	   List<User> users = userService.findPartnerSuggest();
-//	   model.addAttribute("usersSuggest" , users);
+	   List<User> users = userService.findPartnerSuggest();
+	   model.addAttribute("usersSuggest" , users);
        return "home";
    }
    

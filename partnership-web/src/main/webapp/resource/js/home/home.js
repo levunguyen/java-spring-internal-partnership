@@ -66,23 +66,23 @@
 			
 			
 			
-            function toPage( a , link){
+            function toPage( a ){
 
 	                switch(a){
 	                    case 0:
-	                        effect( a , link )
+	                        effect( a  )
 	                        break;
 	                    case 1:
-	                        effect( a , link )
+	                        effect( a  )
 	                        break;
 	                    case 2:
-	                        effect( a , link )
+	                        effect( a  )
 	                        break;
                 }
             }
            
             function effect( a , link ){
-                document.getElementById("iframe-suggest").src = link;
+                //document.getElementById("iframe-suggest").src = link;
                 var x = document.getElementsByClassName("suggest");
                 for (var i =0; i<3 ; i++){
                  x[i].classList.remove("active");   

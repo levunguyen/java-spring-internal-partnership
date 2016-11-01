@@ -248,11 +248,24 @@ section article .bacground-search .slide img{
     color: #fff;    
 }
 
-#iframe-suggest{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 2em;
-    height: 800px;
-    border: none;
-    
+.suggest-users{
+    width: 80%;     
+    margin: 2em auto;
+    border: none;    
 }
+.mini-profile{	
+	margin-top: 0.3em;
+	box-sizing: boder-box;
+}
+.mini-profile:nth-child(even) .profile-content{
+	margin-left: 0.1em;
+}  
+.mini-profile:nth-child(odd) .profile-content{
+	margin-right: 0.1em;
+}
+.profile-content{	
+	padding: 0.4em;
+	border: 1px solid #aaa;
+	
+}
+

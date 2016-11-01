@@ -14,7 +14,7 @@
 	<link href="<c:url value="/resource/css/font-awesome-4.6.3/css/font-awesome.min.css" />" rel="stylesheet">	
  	<link href="<c:url value="/resource/css/home-body.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/css/profile.css" />" rel="stylesheet">
-	<link href="<c:url value="/resource/css/list-result.css" />" rel="stylesheet">
+	<!-- <link href="<c:url value="/resource/css/list-result.css" />" rel="stylesheet">  -->
 	<title>PartnerShip</title>
 	</head>
 <body>
