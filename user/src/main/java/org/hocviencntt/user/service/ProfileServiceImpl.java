@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 @Service
 public class ProfileServiceImpl implements ProfileService{
-
-	@Autowired
-	private ProfileRepository profileRepository;
-
-	public Profile loadProfile(String username) {
-		return profileRepository.findOne(username);
-	}
-	
+//
+//	@Autowired
+//	private ProfileRepository profileRepository;
+//
+//	public Profile loadProfile(String username) {
+//		return profileRepository.findOne(username);
+//	}
+//	
 	
 
 }

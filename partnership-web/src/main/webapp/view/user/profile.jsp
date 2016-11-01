@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                     	
-                            <img src="${profile.getImage() }" class="business-item--cover__large-profile"/> 
+                            <img src="${user.profile.getImage() }" class="business-item--cover__large-profile"/> 
                             
                          </div>   
                     </div>
@@ -48,7 +48,7 @@
                 <div class="col-sm-9">
                 	<row>
 	                    <h3 class="container name-group">
-	                     ${profile.getFirstName() } ${profile.getLastName() }
+	                     ${user.profile.getFirstName() } ${user.profile.getLastName() }
 	                            <i class="fa fa-star" style="font-size:24px;color:#ffcc00;"></i>
 	                            <i class="fa fa-star" style="font-size:24px;color:#ffcc00;"></i>
 	                            <i class="fa fa-star" style="font-size:24px;color:#ffcc00;"></i>
@@ -60,11 +60,11 @@
                         <row class="view-name">
                             <div class="col-sm-6">
                                             <label for="type">First Name</label>
-                                            <input type="text" class="form-control" id="firstname" placeholder="${profile.getFirstName() }">
+                                            <input type="text" class="form-control" id="firstname" placeholder="${user.profile.getFirstName() }">
                             </div>
                             <div class="col-sm-5">
                                            <label for="type">Last Name</label>
-                                            <input type="text" class="form-control" id="lastname" placeholder="${profile.getLastName() }">
+                                            <input type="text" class="form-control" id="lastname" placeholder="${user.profile.getLastName() }">
                              </div>
                          </row> 
                         <row>
@@ -101,7 +101,7 @@
                         <div class="col-sm-6">
                                         <label for="email">Email</label>
                                         <div class="input-group">
-                                          <input id="user-email" type="text" data-rule-required="true" maxlength="250" value="${profile.getEmail() }" readonly="" class="form-control" aria-required="true" aria-invalid="false">
+                                          <input id="user-email" type="text" data-rule-required="true" maxlength="250" value="${user.profile.getEmail() }" readonly="" class="form-control" aria-required="true" aria-invalid="false">
                                           <span class="input-group-btn">
                                             <button class="btn btn-success" type="button">Change</button>
                                           </span>
@@ -110,7 +110,7 @@
                                    <div class="col-sm-5">
                                        <label for="phone">Phone</label>
                                        <div class="input-group">
-                                          <input id="user-phone-number" type="text" maxlength="250" readonly="" class="phoneInput form-control" autocomplete="off" placeholder="${profile.getPhone() }">
+                                          <input id="user-phone-number" type="text" maxlength="250" readonly="" class="phoneInput form-control" autocomplete="off" placeholder="${user.profile.getPhone() }">
                                           <span class="input-group-btn">
                                             <button class="btn btn-success" type="button">Change</button>
                                           </span>

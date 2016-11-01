@@ -6,4 +6,6 @@ import org.hocviencntt.user.model.User;
 
 public interface UserService {
 	public List<User> findPartnerSuggest();
+	
+	public User findUser(String name);
 }

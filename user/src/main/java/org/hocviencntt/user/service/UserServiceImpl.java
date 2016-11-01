@@ -15,5 +15,9 @@ public class UserServiceImpl implements UserService {
 	public List<User> findPartnerSuggest(){		
 		return userRepository.findAll();		
 	}
+
+	public User findUser(String name) {
+		return userRepository.findOne(name);
+	}
 	
 }

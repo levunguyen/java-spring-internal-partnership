@@ -4,6 +4,6 @@ import org.hocviencntt.user.model.Profile;
 
 public interface ProfileService {
 	
-	public Profile loadProfile(String username);
+//	public Profile loadProfile(String username);
 	
 }
