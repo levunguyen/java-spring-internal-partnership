@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 
 @Entity
@@ -27,6 +28,7 @@ public class Location implements Serializable {
 	@Column
 	private int zipcode;
 	@Column(name="username")
+	@JoinColumn(name="username")
 	private String userName;
 	public Location(int id, String country, String city, String street, String number, int zipcode, String userName) {
 		super();

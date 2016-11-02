@@ -5,6 +5,8 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity(name="business")
@@ -20,6 +22,8 @@ public class Business {
 	@Column(name="startday")
 	private Date startDay;
 	@Column(name="username")
+	@ManyToOne
+	@JoinColumn(name = "username")
 	private String userName;
 	public Business(int id, String name, String experience, Date startday, String userName) {
 		super();
