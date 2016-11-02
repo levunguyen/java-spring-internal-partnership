@@ -89,12 +89,12 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 		</createTable>
 	</changeSet>
 	
-	<changeSet id="p1" author="phuong">
+	 <changeSet id="p1" author="phuong">
 		<insert tableName="user">
 			<column name="userName" value="admin"></column>
 			<column name="password" value="admin"></column>
 		</insert>
-	</changeSet>
+	</changeSet> 
 	
 	
 	<changeSet id="p3" author="phuong">
@@ -110,62 +110,12 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 			<column name="phone" value="0905747851"></column>
 		</insert>
 	</changeSet>
-	<changeSet id="t1" author="tien">
-		<insert tableName="business">
-			<column name="id" value="1"></column>
-			<column name="name" value="Development"></column>
-			<column name="experience" value="3years"></column>
-			<column name="username" value="admin"></column>
-		</insert>
-	</changeSet>
-	<changeSet id="t2" author="tien">
-		<insert tableName="location">
-			<column name="id" value="1"></column>
-			<column name="country" value="VietNam"></column>
-			<column name="city" value="DaNang"></column>
-			<column name="street" value="LeDuan"></column>
-			<column name="number" value="2"></column>
-			<column name="zipcode" value="43"></column>
-			<column name="username" value="admin"></column>
-		</insert>
-	</changeSet>
-	<changeSet id="t3" author="tien">
-		<insert tableName="location">
-			<column name="id" value="2"></column>
-			<column name="country" value="VietNam"></column>
-			<column name="city" value="DaNang"></column>
-			<column name="street" value="TruongChinh"></column>
-			<column name="number" value="18"></column>
-			<column name="zipcode" value="43"></column>
-			<column name="username" value="Tony"></column>
-		</insert>
-		<insert tableName="business">
-			<column name="id" value="2"></column>
-			<column name="name" value="Development"></column>
-			<column name="experience" value="5years"></column>
-			<column name="username" value="Tony"></column>
-		</insert>
-		<insert tableName="location">
-			<column name="id" value="3"></column>
-			<column name="country" value="USA"></column>
-			<column name="city" value="Massachussets"></column>
-			<column name="street" value="oldschool"></column>
-			<column name="number" value="30"></column>
-			<column name="zipcode" value="4"></column>
-			<column name="username" value="Ben"></column>
-		</insert>
-		<insert tableName="business">
-			<column name="id" value="3"></column>
-			<column name="name" value="Analysis"></column>
-			<column name="experience" value="1years"></column>
-			<column name="username" value="Bon"></column>
-		</insert>
-	</changeSet>
+	
 	<changeSet id="p4" author="phuong">
 		<addForeignKeyConstraint constraintName="fk_profile_user" referencedTableName="user" 
 		baseColumnNames="username" baseTableName="profile" referencedColumnNames="username"/>
 	</changeSet>
-	<changeSet id="h3" author="Ha">
+	 <changeSet id="h3" author="Ha">
 		<insert tableName="user">
 			<column name="username" value="batcandoi"></column>
 			<column name="password" value="admin"></column>
@@ -178,10 +128,78 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 			<column name="username" value="Nguyen Van Ha"></column>
 			<column name="password" value="12345"></column>
 		</insert>		
+	</changeSet> 
+	<changeSet id="t1" author="tien">
+		<addForeignKeyConstraint 
+		constraintName="fk_business_user" 
+		referencedTableName="user" 
+		baseColumnNames="username" 
+		baseTableName="business" 
+		referencedColumnNames="username"/>
+		
+		<addForeignKeyConstraint 
+		constraintName="fk_location_user" 
+		referencedTableName="user" 
+		baseColumnNames="username" 
+		baseTableName="location" 
+		referencedColumnNames="username"/>
 	</changeSet>
+	  <changeSet id="t2" author="tien">
+		<insert tableName="business">
+			<column name="id" value="1"></column>
+			<column name="name" value="Development"></column>
+			<column name="experience" value="3years"></column>
+			<column name="username" value="admin"></column>
+		</insert>
+	</changeSet> 
+	<changeSet id="t3" author="tien">
+		<insert tableName="location">
+			<column name="id" value="1"></column>
+			<column name="country" value="VietNam"></column>
+			<column name="city" value="DaNang"></column>
+			<column name="street" value="LeDuan"></column>
+			<column name="number" value="2"></column>
+			<column name="zipcode" value="43"></column>
+			<column name="username" value="admin"></column>
+		</insert>
+	</changeSet> 
+	 
+	<changeSet id="t4" author="tien">
+		<insert tableName="location">
+			<column name="id" value="2"></column>
+			<column name="country" value="VietNam"></column>
+			<column name="city" value="DaNang"></column>
+			<column name="street" value="TruongChinh"></column>
+			<column name="number" value="18"></column>
+			<column name="zipcode" value="43"></column>
+			<column name="username" value="batcandoi"></column>
+		</insert>
+		<insert tableName="business">
+			<column name="id" value="2"></column>
+			<column name="name" value="Development"></column>
+			<column name="experience" value="5years"></column>
+			<column name="username" value="batcandoi"></column>
+		</insert>
+		<insert tableName="location">
+			<column name="id" value="3"></column>
+			<column name="country" value="USA"></column>
+			<column name="city" value="Massachusetts"></column>
+			<column name="street" value="oldschool"></column>
+			<column name="number" value="30"></column>
+			<column name="zipcode" value="4"></column>
+			<column name="username" value="Havannguyen"></column>
+		</insert>
+		<insert tableName="business">
+			<column name="id" value="3"></column>
+			<column name="name" value="Analysis"></column>
+			<column name="experience" value="1years"></column>
+			<column name="username" value="Havannguyen"></column>
+		</insert>
+	</changeSet> 
 	
 	<changeSet author="Huy (generated)" id="4">
 		<tagDatabase tag="version_1.0" />
 	</changeSet>
+	
 
 </databaseChangeLog>
