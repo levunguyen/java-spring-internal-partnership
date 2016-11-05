@@ -5,9 +5,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -23,17 +21,17 @@ public class User {
 	@Column(name = "password" )
 	private String passWord;
 	
-	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user" )
+	@OneToMany(mappedBy = "user" )
 	private List<Business> business;
 	
 	
-	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
+	@OneToMany(mappedBy = "user")
 	private List<Location> location;	
 	
 //	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
 //	private List<Project> project;
 	
-	@OneToOne(mappedBy="user",fetch=FetchType.EAGER)
+	@OneToOne(mappedBy="user")
 	private Profile profile;
 
 	public String getUserName() {
