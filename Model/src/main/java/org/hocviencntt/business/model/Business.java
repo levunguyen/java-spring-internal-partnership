@@ -23,19 +23,10 @@ public class Business {
 	private String experience;
 	@Column(name="startday")
 	private Date startDay;
-//	
-//	@ManyToOne
-//	@JoinColumn(name="username")
-//	private User user;
-
-	public Business(int id, String name, String experience, Date startDay, User user) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.experience = experience;
-		this.startDay = startDay;
-//		this.user = user;
-	}
+	
+	@ManyToOne
+	@JoinColumn(name="username")
+	User user;
 
 	public int getId() {
 		return id;
@@ -69,16 +60,27 @@ public class Business {
 		this.startDay = startDay;
 	}
 
-//	public User getUser() {
-//		return user;
-//	}
-//
-//	public void setUser(User user) {
-//		this.user = user;
-//	}
+	public User getUser() {
+		return user;
+	}
 
-public Business() {
-	// TODO Auto-generated constructor stub
-}
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Business(int id, String name, String experience, Date startDay, User user) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.experience = experience;
+		this.startDay = startDay;
+		this.user = user;
+	}
+	
+	public Business() {
+		// TODO Auto-generated constructor stub
+	}
+	
+
 	
 }

@@ -36,16 +36,16 @@
 				</tr>
 			</thead>
 
-			<c:forEach var="listBusinesses" items="${allOfBusiness}">
-				<c:forEach var="listLocations" items="${allOfLocation}">
+			<c:forEach var="listResults" items="${allOfLocation}">
+			<c:forEach var="business" items="${listResults.user.listBusinesses}">
 				<tbody>
 					<tr>
-						<td>${listBusinesses.id}</td>
-						<td>${listBusinesses.userName}</td>
-						<td>${listBusinesses.name}</td>
-						<td>${listBusinesses.experience}</td>
-						<td>${listLocations.country}</td>
-						<td>${listLocations.city}</td>
+						<td>${listResults.id}</td>
+						<td>${listResults.user.userName}</td>
+						<td>${business.name}</td>
+						<td>${business.experience}</td>
+						<td>${listResults.country}</td>
+						<td>${listResults.city}</td>
 					</tr>
 				</tbody>
 				</c:forEach>

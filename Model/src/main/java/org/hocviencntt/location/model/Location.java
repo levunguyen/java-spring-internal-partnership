@@ -30,10 +30,10 @@ public class Location implements Serializable {
 	private String number;
 	@Column
 	private int zipcode;
-//	
-//	@ManyToOne
-//	@JoinColumn(name="username")
-//	private User user;
+
+	@ManyToOne
+	@JoinColumn(name="username")
+	User user;
 
 	public Location(int id, String country, String city, String street, String number, int zipcode, User user) {
 		super();
@@ -43,7 +43,7 @@ public class Location implements Serializable {
 		this.street = street;
 		this.number = number;
 		this.zipcode = zipcode;
-//		this.user = user;
+		this.user = user;
 	}
 
 	public int getId() {
@@ -94,13 +94,13 @@ public class Location implements Serializable {
 		this.zipcode = zipcode;
 	}
 
-//	public User getUser() {
-//		return user;
-//	}
-//
-//	public void setUser(User user) {
-//		this.user = user;
-//	}
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
@@ -108,7 +108,4 @@ public class Location implements Serializable {
 	public Location() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
 }

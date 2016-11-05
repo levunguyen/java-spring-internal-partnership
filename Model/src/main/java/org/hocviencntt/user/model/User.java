@@ -1,10 +1,12 @@
 package org.hocviencntt.user.model;
 
 
-import java.util.List;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -12,7 +14,6 @@ import javax.persistence.Table;
 
 import org.hocviencntt.business.model.Business;
 import org.hocviencntt.location.model.Location;
-import org.hocviencntt.project.model.Project;
 @Entity
 @Table(name= "user")
 public class User {
@@ -21,16 +22,15 @@ public class User {
 	@Column(name = "password" )
 	private String passWord;
 	
-//	@OneToMany(mappedBy = "user" )
-//	private List<Business> business;
-//	
-//	
-//	@OneToMany(mappedBy = "user")
-//	private List<Location> location;	
-//	
-////	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
-////	private List<Project> project;
-//	
+	/*@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
+	private List<Project> project;*/
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="user")
+	private Set<Business> listBusinesses;
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="user")
+	private Set<Location> listLocations;
+	
 	@OneToOne(mappedBy="user")
 	private Profile profile;
 
@@ -50,29 +50,21 @@ public class User {
 		this.passWord = passWord;
 	}
 
-//	public List<Business> getBusiness() {
-//		return business;
-//	}
-//
-//	public void setBusiness(List<Business> business) {
-//		this.business = business;
-//	}
-//
-//	public List<Location> getLocation() {
-//		return location;
-//	}
-//
-//	public void setLocation(List<Location> location) {
-//		this.location = location;
-//	}
+	public Set<Business> getListBusinesses() {
+		return listBusinesses;
+	}
 
-//	public List<Project> getProject() {
-//		return project;
-//	}
-//
-//	public void setProject(List<Project> project) {
-//		this.project = project;
-//	}
+	public void setListBusinesses(Set<Business> listBusinesses) {
+		this.listBusinesses = listBusinesses;
+	}
+
+	public Set<Location> getListLocations() {
+		return listLocations;
+	}
+
+	public void setListLocations(Set<Location> listLocations) {
+		this.listLocations = listLocations;
+	}
 
 	public Profile getProfile() {
 		return profile;
@@ -82,23 +74,17 @@ public class User {
 		this.profile = profile;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "User [userName=" + userName + ", passWord=" + passWord + ", business=" + business + ", location="
-//				+ location + /*", project=" + project +*/  ", profile=" + profile + "]";
-//	}
-//
-//	public User(String userName, String passWord, List<Business> business, List<Location> location,
-//			List<Project> project, Profile profile) {
-//		super();
-//		this.userName = userName;
-//		this.passWord = passWord;
-//		this.business = business;
-//		this.location = location;
-////		this.project = project;
-//		this.profile = profile;
-//	}
-//	
-//	
+	public User(String userName, String passWord, Set<Business> listBusinesses, Set<Location> listLocations,
+			Profile profile) {
+		super();
+		this.userName = userName;
+		this.passWord = passWord;
+		this.listBusinesses = listBusinesses;
+		this.listLocations = listLocations;
+		this.profile = profile;
+	}
 
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
 }
