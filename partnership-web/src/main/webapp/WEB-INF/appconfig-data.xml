@@ -18,7 +18,7 @@
 			<property name="url"
 				value="jdbc:mysql://localhost:3306/partnership_db" />
 			<property name="username" value="root" />
-			<property name="password" value="12345" />
+			<property name="password" value="root" />
 		</bean>	
 		
 		<bean id="entityManagerFactoryBean" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
