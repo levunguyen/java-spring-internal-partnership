@@ -1,4 +1,4 @@
-package org.hocviencntt.model.business;
+package org.hocviencntt.business.model;
 
 import java.util.Date;
 
@@ -9,7 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.hocviencntt.model.user.User;
+import org.hocviencntt.user.model.User;
 
 @Entity(name="business")
 @Table(name="business")
@@ -23,10 +23,10 @@ public class Business {
 	private String experience;
 	@Column(name="startday")
 	private Date startDay;
-	
-	@ManyToOne
-	@JoinColumn(name="username")
-	private User user;
+//	
+//	@ManyToOne
+//	@JoinColumn(name="username")
+//	private User user;
 
 	public Business(int id, String name, String experience, Date startDay, User user) {
 		super();
@@ -34,7 +34,7 @@ public class Business {
 		this.name = name;
 		this.experience = experience;
 		this.startDay = startDay;
-		this.user = user;
+//		this.user = user;
 	}
 
 	public int getId() {
@@ -69,13 +69,13 @@ public class Business {
 		this.startDay = startDay;
 	}
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
+//	public User getUser() {
+//		return user;
+//	}
+//
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
 
 public Business() {
 	// TODO Auto-generated constructor stub

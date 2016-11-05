@@ -2,7 +2,7 @@ package org.hocviencntt.business.service;
 
 import java.util.List;
 
-import org.hocviencntt.model.business.Business;
+import org.hocviencntt.business.model.Business;
 
 public interface BusinessService {
 

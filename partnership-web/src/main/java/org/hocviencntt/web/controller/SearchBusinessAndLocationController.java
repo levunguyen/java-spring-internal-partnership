@@ -1,10 +1,10 @@
 package org.hocviencntt.web.controller;
 import java.util.List;
 
+import org.hocviencntt.business.model.Business;
 import org.hocviencntt.business.service.BusinessService;
+import org.hocviencntt.location.model.Location;
 import org.hocviencntt.location.service.LocationService;
-import org.hocviencntt.model.business.Business;
-import org.hocviencntt.model.location.Location;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

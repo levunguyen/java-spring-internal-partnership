@@ -2,8 +2,8 @@ package org.hocviencntt.location.service;
 
 import java.util.List;
 
+import org.hocviencntt.location.model.Location;
 import org.hocviencntt.location.repository.LocationRepository;
-import org.hocviencntt.model.location.Location;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 @Service

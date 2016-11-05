@@ -1,4 +1,4 @@
-package org.hocviencntt.model.user;
+package org.hocviencntt.user.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

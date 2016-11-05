@@ -1,4 +1,4 @@
-package org.hocviencntt.model.location;
+package org.hocviencntt.location.model;
 
 import java.io.Serializable;
 
@@ -9,7 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.hocviencntt.model.user.User;
+import org.hocviencntt.user.model.User;
 
 @Entity
 @Table(name = "location")
@@ -30,10 +30,10 @@ public class Location implements Serializable {
 	private String number;
 	@Column
 	private int zipcode;
-	
-	@ManyToOne
-	@JoinColumn(name="username")
-	private User user;
+//	
+//	@ManyToOne
+//	@JoinColumn(name="username")
+//	private User user;
 
 	public Location(int id, String country, String city, String street, String number, int zipcode, User user) {
 		super();
@@ -43,7 +43,7 @@ public class Location implements Serializable {
 		this.street = street;
 		this.number = number;
 		this.zipcode = zipcode;
-		this.user = user;
+//		this.user = user;
 	}
 
 	public int getId() {
@@ -94,13 +94,13 @@ public class Location implements Serializable {
 		this.zipcode = zipcode;
 	}
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
+//	public User getUser() {
+//		return user;
+//	}
+//
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
