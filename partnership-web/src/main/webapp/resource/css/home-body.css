@@ -221,7 +221,7 @@ section article .bacground-search .slide img{
 .suggest-bar{
     width: 80%;
     margin: 0 auto;
-    border: 1.5px solid black;
+    border: 1.5px solid #aaa;
     box-shadow: 1px 2px 2px #aaa;
     overflow: auto;
 }
@@ -233,7 +233,7 @@ section article .bacground-search .slide img{
     font-size: 1.3em;
     padding: 0.4em 1.1em;
     text-align: center;
-    border-left: 1px solid black;
+    border-left: 1px solid #aaa;
     cursor: pointer;
 }
 .suggest-bar .suggest:first-child{

@@ -1,13 +1,18 @@
 package org.hocviencntt.user.model;
 
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import org.hocviencntt.business.model.Business;
 @Entity
 @Table(name= "user")
 public class User {
@@ -15,6 +20,23 @@ public class User {
 	private String userName;
 	@Column(name = "password" )
 	private String passWord;
+	
+	@OneToMany(fetch = FetchType.EAGER,mappedBy = "business" )
+	private List<Business> business;
+	
+	
+	public List<Business> getBusiness() {
+		return business;
+	}
+
+
+
+	public void setBusiness(List<Business> business) {
+		this.business = business;
+	}
+
+
+
 	@OneToOne(mappedBy="user",fetch=FetchType.EAGER)
 	private Profile profile;
 	
