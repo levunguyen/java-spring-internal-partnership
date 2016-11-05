@@ -1,4 +1,4 @@
-package org.hocviencntt.project.model;
+package org.hocviencntt.model.project;
 
 import java.sql.Date; 
 

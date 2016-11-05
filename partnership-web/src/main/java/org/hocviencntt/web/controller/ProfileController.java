@@ -1,7 +1,7 @@
 package org.hocviencntt.web.controller;
 
-import org.hocviencntt.user.model.Profile;
-import org.hocviencntt.user.model.User;
+import org.hocviencntt.model.user.Profile;
+import org.hocviencntt.model.user.User;
 import org.hocviencntt.user.service.ProfileService;
 import org.hocviencntt.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

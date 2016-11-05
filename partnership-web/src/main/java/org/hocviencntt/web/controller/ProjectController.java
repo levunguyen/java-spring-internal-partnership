@@ -2,7 +2,7 @@ package org.hocviencntt.web.controller;
 
 import java.util.List;
 
-import org.hocviencntt.project.model.Project;
+import org.hocviencntt.model.project.Project;
 import org.hocviencntt.project.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -2,7 +2,7 @@ package org.hocviencntt.location.repository;
 
 import java.util.List;
 
-import org.hocviencntt.location.model.Location;
+import org.hocviencntt.model.location.Location;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

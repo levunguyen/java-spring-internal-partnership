@@ -18,7 +18,7 @@
 			<property name="url"
 				value="jdbc:mysql://localhost:3306/partnership_db" />
 			<property name="username" value="root" />
-			<property name="password" value="root" />
+			<property name="password" value="12345" />
 		</bean>	
 		
 		<bean id="entityManagerFactoryBean" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
@@ -39,10 +39,10 @@
         </property>
         <property name="packagesToScan">
         	<list>
-        		<value>org.hocviencntt.user.model</value>
-        		<value>org.hocviencntt.project.model</value>
-        		<value>org.hocviencntt.location.model</value>
-        		<value>org.hocviencntt.business.model</value>
+        		<value>org.hocviencntt.model.user</value>
+        		<value>org.hocviencntt.model.project</value>
+        		<value>org.hocviencntt.model.business</value>
+        		<value>org.hocviencntt.model.location</value>
         	</list>
         </property>
     </bean>	

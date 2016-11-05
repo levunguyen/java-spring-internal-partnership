@@ -8,7 +8,11 @@
   <artifactId>project</artifactId>
   
   <dependencies>
-		
+				<dependency>
+			<groupId>hocviencongnghethongtin</groupId>
+			<artifactId>model</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
 		<!-- Apache Commons Upload -->
 		<dependency>
 			<groupId>commons-io</groupId>

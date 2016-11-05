@@ -1,6 +1,6 @@
 package org.hocviencntt.project.service;
 
-import org.hocviencntt.project.model.Project;
+import org.hocviencntt.model.project.Project;
 
 public interface ProjectService {
 	public boolean deleteProject(int id);

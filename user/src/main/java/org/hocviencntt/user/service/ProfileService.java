@@ -1,6 +1,6 @@
 package org.hocviencntt.user.service;
 
-import org.hocviencntt.user.model.Profile;
+import org.hocviencntt.model.user.Profile;
 
 public interface ProfileService {
 	

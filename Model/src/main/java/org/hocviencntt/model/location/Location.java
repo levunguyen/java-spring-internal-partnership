@@ -1,4 +1,4 @@
-package org.hocviencntt.location.model;
+package org.hocviencntt.model.location;
 
 import java.io.Serializable;
 
@@ -9,7 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.hocviencntt.user.model.User;
+import org.hocviencntt.model.user.User;
 
 @Entity
 @Table(name = "location")

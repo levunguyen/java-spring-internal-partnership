@@ -17,5 +17,5 @@
 	<import resource="classpath:userApplicationContext.xml"/>
     <import resource="classpath:locationApplicationContext.xml"/>
     <import resource="classpath:businessApplicationContext.xml"/>
-
+	<import resource="classpath:modelApplicationContext.xml"/>
 </beans>

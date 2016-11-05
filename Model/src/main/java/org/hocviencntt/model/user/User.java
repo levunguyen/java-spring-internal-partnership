@@ -1,4 +1,4 @@
-package org.hocviencntt.user.model;
+package org.hocviencntt.model.user;
 
 
 import java.util.List;
@@ -12,9 +12,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import org.hocviencntt.business.model.Business;
-import org.hocviencntt.location.model.Location;
-import org.hocviencntt.project.model.Project;
+import org.hocviencntt.model.business.Business;
+import org.hocviencntt.model.location.Location;
+import org.hocviencntt.model.project.Project;
 @Entity
 @Table(name= "user")
 public class User {
