@@ -22,7 +22,7 @@ public class SearchBusinessAndLocationController {
 	private LocationService locationService;
 	
 //	public List<String> usernames;
-	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public String searchBusinessAndLocation(@RequestParam("name") String name,@RequestParam("city") String city, Model model) {
 		List<Business> listBusinesses=businessService.findByBusiness(name);
 		List<Location> listLocations=locationService.findByLocation(city);
@@ -41,7 +41,7 @@ public class SearchBusinessAndLocationController {
 			}
 		}
 		return "listView";
-	} 
+	} */
 	
 //
 //	@RequestMapping(value="/findlocation",method=RequestMethod.GET)
