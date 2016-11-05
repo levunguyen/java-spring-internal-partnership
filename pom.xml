@@ -12,7 +12,7 @@
 		<module>project</module>
 		<module>location</module>
 		<module>business</module>
-		<module>Model</module>
+		<module>model</module>
 	</modules>
 
 	<properties>

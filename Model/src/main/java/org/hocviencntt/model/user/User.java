@@ -30,8 +30,8 @@ public class User {
 	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
 	private List<Location> location;	
 	
-	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
-	private List<Project> project;
+//	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
+//	private List<Project> project;
 	
 	@OneToOne(mappedBy="user",fetch=FetchType.EAGER)
 	private Profile profile;
@@ -68,13 +68,13 @@ public class User {
 		this.location = location;
 	}
 
-	public List<Project> getProject() {
-		return project;
-	}
-
-	public void setProject(List<Project> project) {
-		this.project = project;
-	}
+//	public List<Project> getProject() {
+//		return project;
+//	}
+//
+//	public void setProject(List<Project> project) {
+//		this.project = project;
+//	}
 
 	public Profile getProfile() {
 		return profile;
@@ -87,7 +87,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [userName=" + userName + ", passWord=" + passWord + ", business=" + business + ", location="
-				+ location + ", project=" + project + ", profile=" + profile + "]";
+				+ location + /*", project=" + project +*/  ", profile=" + profile + "]";
 	}
 
 	public User(String userName, String passWord, List<Business> business, List<Location> location,
@@ -97,7 +97,7 @@ public class User {
 		this.passWord = passWord;
 		this.business = business;
 		this.location = location;
-		this.project = project;
+//		this.project = project;
 		this.profile = profile;
 	}
 	
