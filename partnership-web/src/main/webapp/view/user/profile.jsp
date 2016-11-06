@@ -75,35 +75,45 @@
                                             <input type="text" class="form-control" id="lastname" placeholder="${user.profile.getLastName() }">
                              </div>
                          </row> 
+                        
+             
                         <row>
-                        <div class="col-sm-11 business-group">
-                                <label for="type">Business</label>          
-                                            <div class="input-group">
-                                              <input type="text" class="form-control" aria-label="...">
-                                              <div class="input-group-btn">
-                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select <span class="caret"></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                  <li><a href="#">Action</a></li>
-                                                  <li><a href="#">Another action</a></li>
-                                                  <li><a href="#">Something else here</a></li>
-                                                  <li role="separator" class="divider"></li>
-                                                  <li><a href="#">Separated link</a></li>
-                                                </ul>
-                                              </div><!-- /btn-group -->
-                                            </div><!-- /input-group -->
-                        </div> 
-                        </row>
-                        <row>
-                        <div class="col-sm-11 address-group">
-                                <label for="type">Address</label>          
-                                            <div class="input-group">
-                                              <input type="text" class="form-control" aria-label="...">
-                                              <span class="input-group-btn span-address-add">
-                                            		<button class="btn btn-success btn-address-add" type="button">Add</button>
+                        <div class="col-sm-11 view-business--tag">
+                            <label for="type">Business</label>     
+                            <div class="input-group tag-group">
+                                <div data-location-name="74000" class="tag-content list-categories left linked-categories">
+                                <c:forEach items="${user.listBusinesses}" var="business">
+                                    <span class="category-tag linked-category">${business.name}&nbsp;</span>
+                                    <a href="#">
+                                          <span class="glyphicon glyphicon-remove"></span>
+                                        </a>
+                                </c:forEach>
+                                </div>
+                                <span class="input-group-btn btn-add-profile">
+                                            		<button class="btn btn-success" type="button">Add</button>
                                           		</span>
-                                            </div><!-- /input-group -->
+                            </div><!-- /input-group -->
                         </div>
                         </row>
+                        <row>
+                        <div class="col-sm-11 view-business--tag">
+                            <label for="type">Address</label>     
+                            <div class="input-group tag-group">
+                                <div data-location-name="74000" class="tag-content list-categories left linked-categories">
+                                    <c:forEach items="${user.listLocations}" var="location">
+                                    <span class="category-tag linked-category">${location.number}-${location.street}-${location.city}-${location.country};</span>
+                                    <a href="#">
+                                          <span class="glyphicon glyphicon-remove"></span>
+                                        </a>
+                                    </c:forEach>    
+                                </div>
+                                <span class="input-group-btn btn-add-profile">
+                                            		<button class="btn btn-success" type="button">Add</button>
+                                          		</span>
+                            </div><!-- /input-group -->
+                        </div>
+                        </row>
+                        
                         
                         <row>
                         <div class="col-sm-6">

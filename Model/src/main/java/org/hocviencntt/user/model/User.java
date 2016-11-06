@@ -31,7 +31,7 @@ public class User {
 	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="user")
 	private Set<Location> listLocations;
 	
-	@OneToOne(mappedBy="user")
+	@OneToOne(mappedBy="user",fetch=FetchType.EAGER)
 	private Profile profile;
 
 	public String getUserName() {

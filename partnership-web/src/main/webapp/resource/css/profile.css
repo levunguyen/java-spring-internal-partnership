@@ -81,3 +81,44 @@ header, nav, footer, article {
         .avatar-defaul{
             width: 90%;
         }    
+   .view-business--tag {
+    margin: 20px 0 15px;
+}
+.tag-group {
+    display: table;
+} 
+.tag-group .tag-icon {
+    display: table-cell;
+    background-color: #55657E;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.list-categories.left {
+    text-align: left;
+}
+.list-categories {
+    clear: both;
+}        
+.tag-group .tag-content {
+    border: 1px solid #adb9ca;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 15px;
+    font-style: italic;
+    color: #777777;
+}
+.tag-group .tag-content span {
+    margin-right: 10px;
+    margin-right: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 0px;
+}
+.tag-group .btn-add-profile{
+                display: table-cell;
+        }     
