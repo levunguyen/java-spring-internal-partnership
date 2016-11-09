@@ -71,7 +71,7 @@
                                 <h4 class="modal-title" id="exampleModalLabel">REGISTER ACCOUNT</h4>
                             </div>
                             <div class="modal-body">
-                                <form class="form-horizontal" method="post" action="#">
+                                <form class="container form-horizontal" method="post" action="#">
 
                                     <div class="form-group">
                                         <label for="name" class="cols-sm-2 control-label">Your Name</label>
@@ -128,11 +128,8 @@
                                     </div>
 
                                 </form>
-                            </div>
-                           
-
-                            <hr class="form-authentication--breakline">
-                            <div class="row no-margin-horizon">
+                                <hr class="container">
+                            <div class="container row-footer-register no-margin-horizon">
                                 <a href="/auth/facebook" class="btn btn-default btn-block btn-lg btn-primary form-authentication--facebook"> <i class="fa fa-facebook" aria-hidden="true"> </i>
                                     <span>Login with Facebook</span></a>
                                 <a href="/auth/twitter" class="btn btn-default btn-block btn-lg btn-info form-authentication--twitter">
@@ -140,7 +137,11 @@
                                 <a href="/auth/google" class="btn btn-default btn-block btn-lg btn-danger form-authentication--google">
                                     <i class="fa fa-google" aria-hidden="true"> </i><span>Login with Google+</span></a>
                             </div>
-                           <%-- <div class="modal-footer">
+                                
+                            </div>
+                           
+
+                                                       <%-- <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Send message</button>
                             </div>--%>
