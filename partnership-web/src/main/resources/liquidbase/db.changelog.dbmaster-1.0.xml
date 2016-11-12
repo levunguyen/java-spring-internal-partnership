@@ -84,9 +84,29 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 			<column name="date" type="DATETIME" />
 			<column name="comment_by" type="VARCHAR(45)" />
 			<column name="username" type="VARCHAR(45)" />
-
-
 		</createTable>
+	</changeSet>
+	
+	
+	<changeSet id="p7" author="phuong">
+		<createTable tableName="role" >
+			<column name="id" type="INT" autoIncrement="true" >
+				<constraints primaryKey="true" nullable="false"/>
+			</column>
+			<column name="name" type="varchar(45)"></column>
+		</createTable>
+	</changeSet>
+	<changeSet id="p8" author="phuong">
+		<createTable tableName="user_role">
+			<column name="user" type="varchar(45)"></column>
+			<column name="id_role" type="INT"></column>
+		</createTable>
+	</changeSet>
+	<changeSet id="p9" author="phuong">
+		<addForeignKeyConstraint constraintName="fk_user_role" referencedTableName="user" 
+		baseColumnNames="user" baseTableName="user_role" referencedColumnNames="username"/>
+		<addForeignKeyConstraint constraintName="fk_role_user" referencedTableName="role" 
+		baseColumnNames="id_role" baseTableName="user_role" referencedColumnNames="id"/>
 	</changeSet>
 	
 	 <changeSet id="p1" author="phuong">
