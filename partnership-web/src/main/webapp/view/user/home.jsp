@@ -80,7 +80,7 @@
 						<div class="right-profile col-md-8">
 							<div class="name-partner">
 								<h4 style="font-weight: bold;">Name:</h4>
-								<h4>${users.userName}</h4>
+								<h4>${users.username}</h4>
 							</div>
 							<div class="experience">
 								<h4 style="font-weight: bold;">Experience :</h4>

@@ -20,7 +20,13 @@
     <mvc:annotation-driven />
     <!-- This inject css js into project  -->
      <mvc:resources mapping="/resource/**" location="/resource/" />
-     
+     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>classpath*:validation</value>
+            </list>
+        </property>
+    </bean>
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass">
@@ -46,10 +52,6 @@
     
 
 
-    <!-- This resolves messages from resource bundles for different locales -->
-    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
-        <property name="basename" value="messages" />
-    </bean>
 
     <!-- To validate the posted add employee form -->
     <!--   <bean id="employeeValidator" class="com.howtodoinjava.demo.validator.EmployeeValidator" />-->

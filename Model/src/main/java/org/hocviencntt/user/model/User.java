@@ -8,9 +8,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hocviencntt.business.model.Business;
 import org.hocviencntt.location.model.Location;
@@ -18,10 +22,11 @@ import org.hocviencntt.location.model.Location;
 @Table(name= "user")
 public class User {
 	@Id@Column(name= "username")
-	private String userName;
+	private String username;
 	@Column(name = "password" )
-	private String passWord;
-	
+	private String password;
+	@Transient
+	private String passwordConfirm;
 	/*@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
 	private List<Project> project;*/
 	
@@ -33,21 +38,44 @@ public class User {
 	
 	@OneToOne(mappedBy="user",fetch=FetchType.EAGER)
 	private Profile profile;
-
-	public String getUserName() {
-		return userName;
+	
+	@ManyToMany
+	@JoinTable(name="user_role",
+		joinColumns = @JoinColumn(name = "user"),
+		inverseJoinColumns = @JoinColumn(name = "id_role"))		
+	private Set<Role> roles;
+	
+	
+	public Set<Role> getRoles() {
+		return roles;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
+	
+	public String getUsername() {
+		return username;
 	}
 
-	public String getPassWord() {
-		return passWord;
+	public void setUsername(String userName) {
+		this.username = userName;
 	}
 
-	public void setPassWord(String passWord) {
-		this.passWord = passWord;
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String passWord) {
+		this.password = passWord;
+	}
+
+	public String getPasswordConfirm() {
+		return passwordConfirm;
+	}
+
+	public void setPasswordConfirm(String passwordConfirm) {
+		this.passwordConfirm = passwordConfirm;
 	}
 
 	public Set<Business> getListBusinesses() {
@@ -77,8 +105,8 @@ public class User {
 	public User(String userName, String passWord, Set<Business> listBusinesses, Set<Location> listLocations,
 			Profile profile) {
 		super();
-		this.userName = userName;
-		this.passWord = passWord;
+		this.username = userName;
+		this.password = passWord;
 		this.listBusinesses = listBusinesses;
 		this.listLocations = listLocations;
 		this.profile = profile;

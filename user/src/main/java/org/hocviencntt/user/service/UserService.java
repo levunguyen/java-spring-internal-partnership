@@ -8,4 +8,7 @@ public interface UserService {
 	public List<User> findPartnerSuggest();
 	
 	public User findUser(String name);
+	
+	public void save(User user);
+	
 }

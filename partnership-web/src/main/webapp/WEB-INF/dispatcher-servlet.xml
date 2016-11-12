@@ -13,6 +13,7 @@
 	
 	<import resource="appconfig-mvc.xml" />
 	<import resource="appconfig-data.xml" />
+	<import resource="appconfig-security.xml" />	
 	<import resource="classpath:projectApplicationContext.xml"/>
 	<import resource="classpath:userApplicationContext.xml"/>
     <import resource="classpath:locationApplicationContext.xml"/>
