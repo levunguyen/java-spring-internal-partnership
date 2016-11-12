@@ -10,11 +10,12 @@
 		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
 ">
-
+	
 	<import resource="appconfig-mvc.xml" />
 	<import resource="appconfig-data.xml" />
 	<import resource="classpath:projectApplicationContext.xml"/>
 	<import resource="classpath:userApplicationContext.xml"/>
     <import resource="classpath:locationApplicationContext.xml"/>
     <import resource="classpath:businessApplicationContext.xml"/>
+    
 </beans>
