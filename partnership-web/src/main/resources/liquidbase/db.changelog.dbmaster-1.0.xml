@@ -223,7 +223,9 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 		</insert>
 	
 	</changeSet>
-	
+	<changeSet id="p11" author="phuong">
+		<modifyDataType tableName="user" columnName="password" newDataType="varchar(255)" />
+	</changeSet>
 	
 	
 	<changeSet author="Huy (generated)" id="4">
