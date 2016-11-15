@@ -226,6 +226,23 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 	<changeSet id="p11" author="phuong">
 		<modifyDataType tableName="user" columnName="password" newDataType="varchar(255)" />
 	</changeSet>
+	<changeSet id="h5" author="ha">
+		<insert tableName="project">
+			<column name="name" value="Java Applycation"></column>			
+			<column name="status" value="1"></column>
+			<column name="username" value="admin"></column>
+		</insert>
+		<insert tableName="project">
+			<column name="name" value=".NET Applycation"></column>			
+			<column name="status" value="1"></column>
+			<column name="username" value="batcandoi"></column>
+		</insert>
+		<insert tableName="project">
+			<column name="name" value="Androi Applycation"></column>			
+			<column name="status" value="1"></column>
+			<column name="username" value="Havannguyen"></column>
+		</insert>
+	</changeSet>
 	
 	
 	<changeSet author="Huy (generated)" id="4">

@@ -18,6 +18,7 @@ import javax.persistence.Transient;
 
 import org.hocviencntt.business.model.Business;
 import org.hocviencntt.location.model.Location;
+import org.hocviencntt.project.model.Project;
 @Entity
 @Table(name= "user")
 public class User {
@@ -27,8 +28,8 @@ public class User {
 	private String password;
 	@Transient
 	private String passwordConfirm;
-	/*@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
-	private List<Project> project;*/
+	@OneToMany(fetch = FetchType.EAGER,mappedBy = "user")
+	private Set<Project> projects;
 	
 	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="user")
 	private Set<Business> listBusinesses;
@@ -46,6 +47,16 @@ public class User {
 	private Set<Role> roles;
 	
 	
+	
+	
+	public Set<Project> getProjects() {
+		return projects;
+	}
+
+	public void setProjects(Set<Project> projects) {
+		this.projects = projects;
+	}
+
 	public Set<Role> getRoles() {
 		return roles;
 	}
@@ -102,14 +113,19 @@ public class User {
 		this.profile = profile;
 	}
 
-	public User(String userName, String passWord, Set<Business> listBusinesses, Set<Location> listLocations,
-			Profile profile) {
+	
+
+	public User(String username, String password, String passwordConfirm, Set<Project> projects,
+			Set<Business> listBusinesses, Set<Location> listLocations, Profile profile, Set<Role> roles) {
 		super();
-		this.username = userName;
-		this.password = passWord;
+		this.username = username;
+		this.password = password;
+		this.passwordConfirm = passwordConfirm;
+		this.projects = projects;
 		this.listBusinesses = listBusinesses;
 		this.listLocations = listLocations;
 		this.profile = profile;
+		this.roles = roles;
 	}
 
 	public User() {

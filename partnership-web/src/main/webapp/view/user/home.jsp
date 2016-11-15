@@ -84,11 +84,15 @@
 							</div>
 							<div class="experience">
 								<h4 style="font-weight: bold;">Experience :</h4>
-								<h4>Java Deverloper ,Project Managerment</h4>
+								<c:forEach var="experence" items="${users.listBusinesses}">
+									<h4>${experence.experience}</h4>
+								</c:forEach>
 							</div>
 							<div class="projects-finished">
 								<h4 style="font-weight: bold;">Projects finished:</h4>
-								<h4>ABC , XYZ</h4>
+								<c:forEach var="projectfinished" items="${users.projects}">
+									<h4>${projectfinished.name}</h4>
+								</c:forEach>
 							</div>
 						</div>
 					</div>

@@ -4,15 +4,21 @@ import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Generated;
+import org.hocviencntt.user.model.User;
 
 
 @Entity
 @Table(name="project")
 public class Project {
 
-	@Id
+	@Id @GeneratedValue
 	private int id;
 	@Column(name="name")
 	private String name;
@@ -24,8 +30,18 @@ public class Project {
 	private String discrible;
 	@Column(name="status")
 	private int status;
-	@Column(name="username")
-	private String userName;
+	
+	
+	@ManyToOne
+	@JoinColumn(name="username")
+	private User user;
+	
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
 	public int getId() {
 		return id;
 	}
@@ -62,13 +78,7 @@ public class Project {
 	public void setStatus(int status) {
 		this.status = status;
 	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
+	
 	
 	
 }
