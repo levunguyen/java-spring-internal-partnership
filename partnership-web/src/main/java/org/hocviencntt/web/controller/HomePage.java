@@ -51,8 +51,9 @@ public class HomePage {
        userService.save(userForm);
 
        securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
+       model.addAttribute("username", userForm.getUsername());
 
-       return "redirect:/";
+       return "redirect:/profile/?username=${username}";
    }
    
    @RequestMapping(value = "/login", method = RequestMethod.GET)

@@ -243,6 +243,23 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 			<column name="username" value="Havannguyen"></column>
 		</insert>
 	</changeSet>
+	<changeSet id="h6" author="ha">
+		<insert tableName="project">
+			<column name="name" value="Academy App"></column>			
+			<column name="status" value="0"></column>
+			<column name="username" value="admin"></column>
+		</insert>
+		<insert tableName="project">
+			<column name="name" value="Teaching Technical Applycation"></column>			
+			<column name="status" value="0"></column>
+			<column name="username" value="batcandoi"></column>
+		</insert>
+		<insert tableName="project">
+			<column name="name" value="Teaching Androi Applycation"></column>			
+			<column name="status" value="1"></column>
+			<column name="username" value="Havannguyen"></column>
+		</insert>
+	</changeSet>
 	
 	
 	<changeSet author="Huy (generated)" id="4">

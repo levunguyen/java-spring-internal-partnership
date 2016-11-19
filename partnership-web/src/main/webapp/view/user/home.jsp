@@ -90,9 +90,19 @@
 							</div>
 							<div class="projects-finished">
 								<h4 style="font-weight: bold;">Projects finished:</h4>
+								
 								<c:forEach var="projectfinished" items="${users.projects}">
-									<h4>${projectfinished.name}</h4>
+<%-- 									<c:choose> --%>
+<%-- 										<c:when test="${param.enter=='1'}">        --%>
+<%-- 										</c:when> --%>
+<%-- 										<c:otherwise>        --%>
+<%-- 										</c:otherwise> --%>
+<%-- 									</c:choose> --%>
+									<c:if test="${projectfinished.status != 0}">
+										<h4>${projectfinished.name}</h4>
+									</c:if>
 								</c:forEach>
+								
 							</div>
 						</div>
 					</div>
