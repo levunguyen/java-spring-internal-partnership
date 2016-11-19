@@ -1,12 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
- <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
- <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored="false" %>
+
 <header>
 	<div class="logo col-md-6 col-sm-6">
 		<img class="logo-homepage" alt="partnership"
 			src="/partnership-web/resource/images/logo/logo_homepage.png">
 	</div>
+	<div>
+	<c:choose>
+	    <c:when test="${pageContext.request.userPrincipal.name != null}">
+        <form id="logoutForm" method="POST" action="logout">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        </form>
+
+        <h2>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
+
+    	</c:when>
+    	<c:otherwise>
 	<div id="header-login" class="col-md-5 col-md-offset-1 col-sm-6">
 		<div class="area-log col-md-7 col-sm-7">
 			<a class="login btn btn-default" href="#" role="button"
@@ -199,8 +212,11 @@
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Send message</button>
                             </div>--%>
+					</div>
 				</div>
 			</div>
 		</div>
+	</c:otherwise>
+	</c:choose>
 	</div>
 </header>

@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
  <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
  <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+ <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ page isELIgnored="false" %>
  <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
@@ -20,18 +22,11 @@
 	<title>PartnerShip</title>
 	</head>
 <body>
-	<c:choose>
-		 <c:when test="${pageContext.request.userPrincipal.name != null}">
-		 <header>
-		 	<tiles:insertAttribute name="logout"/>
-		 </header>
-	    </c:when>
-	    <c:otherwise>
+
 	    <header>
 	    	<tiles:insertAttribute name="header" />
 	    </header>
-	    </c:otherwise>
-    </c:choose>
+
     <tiles:insertAttribute name="body" />
     <footer>
     	<tiles:insertAttribute name="footer" />
