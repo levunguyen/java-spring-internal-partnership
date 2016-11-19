@@ -46,10 +46,7 @@
 			<put-attribute name="title" value="Profile" />  
 			<put-attribute name="body" value="/view/user/profile.jsp" />
 		</definition>
-		<definition name="login" extends="definition">
-			<put-attribute name="title" value="Login" />  
-			<put-attribute name="body" value="/view/user/login.jsp" />
-		</definition>
+		
 		<definition name="regis" extends="definition">
 			<put-attribute name="title" value="Registrantion" />  
 			<put-attribute name="body" value="/view/user/registration.jsp" />

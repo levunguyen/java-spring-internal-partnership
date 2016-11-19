@@ -31,8 +31,7 @@ public class SearchBusinessAndLocationController {
 		for (Business business : listBusinesses) {
 			for (Location location : listLocations) {
 				if (business.getUser().getUsername().equals(location.getUser().getUsername())) {
-					model.addAttribute("allOfLocation", listLocations);
-					model.addAttribute("ab",listBusinesses);
+					model.addAttribute("listSearch", listLocations);
 				}
 			}
 		}

@@ -2,7 +2,9 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page isELIgnored="false"%>
+
 
 <header>
 	<div class="logo col-md-6 col-sm-6">
@@ -41,23 +43,25 @@
 									<div class="modal-body">
 										<label id="errorLoginForm" class="error"></label>
 										<form novalidate="novalidate" id="loginForm" role="form"
-											action="/auth/local" method="post" autocomplete="off"
+											action="login" method="post" autocomplete="off"
 											class="form-authentication">
-											<div class="form-group has-feedback-left">
-												<input aria-required="true" name="email"
+											<div class="form-group  ${error != null ? 'has-error' : ''} has-feedback-left">
+											<span>${message}</span>
+												<input aria-required="true" name="username"
 													placeholder="Your email address" autocomplete="off"
 													required="required" class="form-control" type="email">
 												<i
 													class="form-control-feedback glyphicon glyphicon-envelope">
 												</i>
 											</div>
-											<div class="form-group has-feedback-left">
+											<div class="form-group has-feedback-left ${error != null ? 'has-error' : ''}">
 												<input aria-required="true" name="password"
 													placeholder="Password" autocomplete="off"
 													required="required" minlength="8" class="form-control"
-													type="password"> <i
-													class="form-control-feedback glyphicon glyphicon-lock">
-												</i>
+													type="password"> 
+													 <span>${error}</span>
+           									 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+												<i class="form-control-feedback glyphicon glyphicon-lock"></i>
 											</div>
 											<div class="row no-margin-horizon">
 												<div class="col-xs-6 no-padding-left">
@@ -76,7 +80,7 @@
 											<hr class="form-authentication--breakline">
 											<div class="row no-margin-horizon ">
 												<span class="ladda-label">Ban chua la thanh vien ?<a
-													href="#" data-target="#carousel-login" data-slide-to="1">Sign
+													href="registration" data-target="#carousel-login" data-slide-to="1">Sign
 														Up</a></span>
 											</div>
 											<hr class="form-authentication--breakline">
@@ -102,7 +106,7 @@
 
 							</div>
 						</div>
-						<a class="register btn btn-success" href="#" data-toggle="modal"
+						 <a class="register btn btn-success" href="#" data-toggle="modal"
 							data-target="#exampleModal" role="button">Register a business</a>
 
 					</div>
@@ -124,8 +128,7 @@
 										ACCOUNT</h4>
 								</div>
 								<div class="modal-body">
-									<form class="container form-horizontal" method="post"
-										action="#">
+									<%-- <form:form class="container form-horizontal"  modelAttribute="userForm" method="post">
 
 										<div class="form-group">
 											<label for="name" class="cols-sm-2 control-label">Your
@@ -152,50 +155,59 @@
 												</div>
 											</div>
 										</div>
-
-										<div class="form-group">
+										<spring:bind path="username">
+										<div class="form-group ${status.error ? 'has-error' : ''}">
 											<label for="username" class="cols-sm-2 control-label">Username</label>
 											<div class="cols-sm-10">
 												<div class="input-group">
 													<span class="input-group-addon"><i
-														class="fa fa-users fa" aria-hidden="true"></i></span> <input
-														type="text" class="form-control" name="username"
-														id="username" placeholder="Enter your Username" required />
+														class="fa fa-users fa" aria-hidden="true"></i>
+														</span> 
+														<form:input type="text"  path="username" class="form-control" 
+														id="username" placeholder="Enter your Username"></form:input>
+														<form:errors path="username"></form:errors>
 												</div>
 											</div>
 										</div>
-
-										<div class="form-group">
+										</spring:bind>
+										<spring:bind path="password" >
+										<div class="form-group  ${status.error ? 'has-error' : ''}">
 											<label for="password" class="cols-sm-2 control-label">Password</label>
 											<div class="cols-sm-10">
 												<div class="input-group">
-													<span class="input-group-addon"><i
-														class="fa fa-lock fa-lg" aria-hidden="true"></i></span> <input
-														type="password" class="form-control" name="password"
-														id="password" placeholder="Enter your Password" required />
+													<span class="input-group-addon">
+													<i
+														class="fa fa-lock fa-lg" aria-hidden="true">
+														</i>
+														</span> 
+														<form:input type="password" class="form-control"  path="password" 
+														id="password" placeholder="Enter your Password"></form:input>
+               											 <form:errors path="password"></form:errors>
 												</div>
 											</div>
 										</div>
-
+										</spring:bind>
+										<spring:bind path="passwordConfirm">
 										<div class="form-group">
 											<label for="confirm" class="cols-sm-2 control-label">Confirm
 												Password</label>
 											<div class="cols-sm-10">
-												<div class="input-group">
+												<div class="input-group ${status.error ? 'has-error' : ''}">
 													<span class="input-group-addon"><i
-														class="fa fa-lock fa-lg" aria-hidden="true"></i></span> <input
-														type="password" class="form-control" name="confirm"
-														id="confirm" placeholder="Confirm your Password" />
+														class="fa fa-lock fa-lg" aria-hidden="true"></i></span> 
+														<form:input type="password" path="passwordConfirm" class="form-control"
+														id="confirm" placeholder="Confirm your Password" ></form:input>
+             										   <form:errors path="passwordConfirm"></form:errors>
 												</div>
 											</div>
 										</div>
-
+						                </spring:bind>
 										<div class="form-group ">
 											<button type="submit"
 												class="btn btn-primary btn-lg btn-block login-button">Register</button>
 										</div>
 
-									</form>
+									</form:form> --%>
 									<hr class="container">
 									<div class="container row-footer-register no-margin-horizon">
 										<a href="/auth/facebook"
@@ -214,7 +226,7 @@
 									</div>
 
 								</div>
-
+ 
 
 								<%-- <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

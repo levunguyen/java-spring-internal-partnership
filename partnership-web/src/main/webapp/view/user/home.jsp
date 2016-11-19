@@ -26,17 +26,17 @@
 					src="/partnership-web/resource/images/logo/logo-search-position.png">
 
 			</div>
-			<form class="form-search row" action="#" method="post">
+			<form class="form-search row" action="search" method="get">
 				<div class="search-business col-md-5 col-xs-5">
 					<div class="box-sizing">
 						<i class="fa fa-user fa-3x" aria-hidden="true"></i> <input
-							type="text" placeholder="Search business" />
+							type="text" name="name" placeholder="Search business" />
 					</div>
 				</div>
 				<div class="search-location col-md-5 col-xs-5">
 					<div class="box-sizing">
 						<i class="fa fa-street-view fa-3x" aria-hidden="true"></i> <input
-							type="text" placeholder="Search location" />
+							type="text" name="city" placeholder="Search location" />
 					</div>
 				</div>
 				<button class="btn btn-success col-md-2 col-xs-2" type="submit"
