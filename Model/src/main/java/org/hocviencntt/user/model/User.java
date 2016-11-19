@@ -24,7 +24,7 @@ import org.hocviencntt.project.model.Project;
 public class User {
 	@Id@Column(name= "username")
 	private String username;
-	@Column(name = "password" )
+
 	private String password;
 	@Transient
 	private String passwordConfirm;

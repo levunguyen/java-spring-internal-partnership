@@ -6,11 +6,12 @@
 	<!-- Base Define -->
 	<definition name="definition" template="/view/template/layout/template.jsp">
 		<put-attribute name="header" value="/view/template/layout/header.jsp" />
+		<put-attribute name="logout" value="/view/template/layout/logout.jsp" />
 		<put-attribute name="menu" value="/view/template/layout/menu.jsp" />
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer" value="/view/template/layout/footer.jsp" />
 	</definition>
-	
+
 	<!-- <definition name="definitionHome"  extends="definition">
 		<put-attribute name="header" value="/view/template/layout/headerHome.jsp" />		
 	</definition> -->
@@ -52,6 +53,10 @@
 		<definition name="regis" extends="definition">
 			<put-attribute name="title" value="Registrantion" />  
 			<put-attribute name="body" value="/view/user/registration.jsp" />
+		</definition>		
+		<definition name="details" extends="definition">
+			<put-attribute name="title" value="Details" />  
+			<put-attribute name="body" value="/view/user/profileDetails.jsp" />
 		</definition>		
 	<!-- try -->
 		

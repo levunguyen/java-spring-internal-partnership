@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <header>
 	<div class="logo col-md-6 col-sm-6">
 		<img class="logo-homepage" alt="partnership"
