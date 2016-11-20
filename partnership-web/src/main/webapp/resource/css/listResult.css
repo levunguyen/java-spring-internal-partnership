@@ -10,11 +10,7 @@
 	width: 30em;
 	height: 12em;
 }
-.search{
-	background-color: white;
-	position: relative;
-}
-.list {
+.person {
 	padding-left: 3em;
 	margin-top: 5em;
 }
@@ -25,14 +21,7 @@ a:hover{
 .media-body .glyphicon{
 	height: 1.5em;
 }
-.local{
-	height: 200em;
-	width: 200em;
-}
-.detal{
+.info-person{
 	padding-left: 2em;
 }
 
-footer {
-    margin: 50px 0;
-}

@@ -1,14 +1,15 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" isELIgnored="false" %>
+
 <body>
 
 
     <!-- Page Content -->
-    <div class="container search">
+    <div class="container">
 
         <!-- Page Heading -->
-        <div class="row list">
+        <div class="row person">
             <div class="col-lg-12">
                 <h1 class="page-header">Results
                     <small></small>
@@ -20,128 +21,113 @@
         	<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15337.488905174387!2d108.2318208!3d16.04616275!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1476548544391" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         
-        <!-- Project One -->
-        <div class="row list">
-            <div class="col-md-6">
-                  <div class="media-left media-top">
-      <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
-    </div>
-    <div class="media-body detal">
-     
-      
-        			<span class="ratings pull-right ">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                     </span>
-                        <h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
-                <h4>Support</h4>
-                <p><img class="glyphicon " src="img/Marker-48.png"> 832 lê duẩn</p>
-                <div class="fb-details">
-                            <a href="https://www.facebook.com/TheLittleitalyAnnecy/timeline" target="_blank" class="business-info-link"><i class="fa fa-facebook-square"> </i><span>Facebook</span></a>
-
-                        </div>
-                <a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
-                
-    </div>
-  </div>
+        <!-- person 1 -->
+        <div class="row person">
+				<div class="col-md-6">
+					 <div class="media-left media-top">
+							<img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
+					</div>
+					<div class="media-body info-person">
+						<span class="ratings pull-right ">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+						 </span>
+							<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
+							<h4>Support</h4>
+							<p><img class="glyphicon " src="/partnership-web/resource/images/Marker-48.png"> 832 lê duẩn</p>
+							<div class="fb-details">
+							<a href="https://www.facebook.com/TheLittleitalyAnnecy/timeline" target="_blank" class="business-info-link"><i class="fa fa-facebook-square"> </i><span>Facebook</span></a>
+							</div>
+					<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
+					</div>
+				</div>
                 
             
            
-      
-            <div class="col-md-6" style="padding-top:3em;">
-                  <div class="media-left media-top">
-      <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px ">
-    </div>
-    <div class="media-body detal">
-      
-        			<span class="ratings pull-right ">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-                     </span>
-                       <h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
-                <h4>Support</h4>
-                <p><img class="glyphicon" src="img/Marker-48.png"> 832 lê duẩn</p>
-                <a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
+      			 <!-- person 2 -->
+            	<div class="col-md-6" style="padding-top:3em;">
+                  		<div class="media-left media-top">
+      					<img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px ">
+    					</div>
+    					<div class="media-body info-person">
+      					<span class="ratings pull-right ">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+						 </span>
+							<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
+							<h4>Support</h4>
+							<p><img class="glyphicon" src="/partnership-web/resource/images/Marker-48.png"> 832 lê duẩn</p>
+							<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
+    					</div>
+  				</div>
                 
-    </div>
-  </div>
-                
-            </div>
+          </div>
            
-           <!-- Project 2 -->
-           
-        
-        <div class="row list">
+         <!-- person 3 -->
+       
+        <div class="row person">
             <div class="col-md-6">
                   <div class="media-left media-top">
 			  <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
 			</div>
-			<div class="media-body detal">
-			  
-
+			<div class="media-body info-person">
 							<span class="ratings pull-right ">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-							 </span>
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+						 	</span>
 						<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
 						<h4>Support</h4>
-						<p><img class="glyphicon" src="img/Marker-48.png"> 832 lê duẩn</p>
+						<p><img class="glyphicon" src="/partnership-web/resource/images/Marker-48.png"> 832 lê duẩn</p>
 						<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
 
 			</div>
 		  </div>
         </div>
-          <!-- Project 3 -->
-           
-        
-        <div class="row list">
+          <!-- person 4 -->
+       
+        <div class="row person">
             <div class="col-md-6">
                   <div class="media-left media-top">
 			  <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
 			</div>
-			<div class="media-body detal">
-			  
-
+			<div class="media-body info-person">
 							<span class="ratings pull-right ">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-							 </span>
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+						 	</span>
 						<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
 						<h4>Support</h4>
-						<p><img class="glyphicon" src="img/Marker-48.png"> 832 lê duẩn</p>
+						<p><img class="glyphicon" src="/partnership-web/resource/images/Marker-48.png"> 832 lê duẩn</p>
 						<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
 
 			</div>
 		  </div>
         </div>
-          <!-- Project 4 -->
-           
-        
-         <div class="row list">
+          <!-- person 5 -->
+       
+        <div class="row person">
             <div class="col-md-6">
                   <div class="media-left media-top">
 			  <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
 			</div>
-			<div class="media-body detal">
-			  
-
+			<div class="media-body info-person">
 							<span class="ratings pull-right ">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
-							 </span>
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+										<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+						 	</span>
 						<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
 						<h4>Support</h4>
-						<p><img class="glyphicon" src="img/Marker-48.png"> 832 lê duẩn</p>
+						<p><img class="glyphicon" src="/partnership-web/resource/images/Marker-48.png"> 832 lê duẩn</p>
 						<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
 
 			</div>
@@ -203,5 +189,4 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
