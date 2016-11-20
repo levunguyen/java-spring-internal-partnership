@@ -18,7 +18,7 @@
  	<link href="<c:url value="/resource/css/home-body.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/css/profile.css" />" rel="stylesheet">
 	<link href="<c:url value="/resource/css/profileDetail.css" />" rel="stylesheet">	
-	<!-- <link href="<c:url value="/resource/css/list-result.css" />" rel="stylesheet">  -->
+	<link href="<c:url value="/resource/css/listResult.css" />" rel="stylesheet"> 
 	<title>PartnerShip</title>
 	</head>
 <body>

@@ -1,6 +1,6 @@
 package org.hocviencntt.web.controller;
 
-import java.util.List;
+import java.util.List; 
 
 import org.hocviencntt.project.model.Project;
 import org.hocviencntt.project.service.ProjectService;
@@ -33,6 +33,10 @@ public class ProjectController {
 			return "listResult";
 		}
 		return "HomeError";
+	}
+	@RequestMapping(value="/project",method=RequestMethod.GET)
+	public String project(){
+		return "listResult";
 	}
 	
 }

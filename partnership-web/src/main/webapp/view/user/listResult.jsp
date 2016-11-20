@@ -1,7 +1,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" isELIgnored="false" %>
-   	<body>
+<body>
 
 
     <!-- Page Content -->
@@ -24,16 +24,16 @@
         <div class="row list">
             <div class="col-md-6">
                   <div class="media-left media-top">
-			      <img src="img/avatar.jpg" class="media-object" style="width:120px">
-			    	</div>
-			    	<div class="media-body detal">
-			     
+      <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
+    </div>
+    <div class="media-body detal">
+     
       
         			<span class="ratings pull-right ">
-                                    <img class="glyphicon" src="img/Star-48.png">
-                                    <img class="glyphicon" src="img/Star-48.png">
-                                    <img class="glyphicon" src="img/Star-48.png">
-                                    <img class="glyphicon" src="img/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
                      </span>
                         <h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
                 <h4>Support</h4>
@@ -44,31 +44,31 @@
                         </div>
                 <a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
                 
-				    </div>
-				  </div>
+    </div>
+  </div>
                 
             
            
       
-            <div class="col-md-6" style="padding-top:5em;">
+            <div class="col-md-6" style="padding-top:3em;">
                   <div class="media-left media-top">
-			      <img src="img/avatar.jpg" class="media-object" style="width:120px ">
-			    </div>
-			    <div class="media-body detal">
-			      
+      <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px ">
+    </div>
+    <div class="media-body detal">
+      
         			<span class="ratings pull-right ">
-                                    <img class="glyphicon" src="img/Star-48.png">
-                                    <img class="glyphicon" src="img/Star-48.png">
-                                    <img class="glyphicon" src="img/Star-48.png">
-                                    <img class="glyphicon" src="img/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+                                    <img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
                      </span>
                        <h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
                 <h4>Support</h4>
                 <p><img class="glyphicon" src="img/Marker-48.png"> 832 lê duẩn</p>
                 <a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-phone"></span>  0934 989792 </a>
                 
-				    </div>
-				  </div>
+    </div>
+  </div>
                 
             </div>
            
@@ -78,16 +78,16 @@
         <div class="row list">
             <div class="col-md-6">
                   <div class="media-left media-top">
-			  <img src="img/avatar.jpg" class="media-object" style="width:120px">
+			  <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
 			</div>
 			<div class="media-body detal">
 			  
 
 							<span class="ratings pull-right ">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
 							 </span>
 						<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
 						<h4>Support</h4>
@@ -103,16 +103,16 @@
         <div class="row list">
             <div class="col-md-6">
                   <div class="media-left media-top">
-			  <img src="img/avatar.jpg" class="media-object" style="width:120px">
+			  <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
 			</div>
 			<div class="media-body detal">
 			  
 
 							<span class="ratings pull-right ">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
 							 </span>
 						<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
 						<h4>Support</h4>
@@ -125,19 +125,19 @@
           <!-- Project 4 -->
            
         
-        <div class="row list">
+         <div class="row list">
             <div class="col-md-6">
                   <div class="media-left media-top">
-			  <img src="img/avatar.jpg" class="media-object" style="width:120px">
+			  <img src="/partnership-web/resource/images/avatar.jpg" class="media-object" style="width:120px">
 			</div>
 			<div class="media-body detal">
 			  
 
 							<span class="ratings pull-right ">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
-											<img class="glyphicon" src="img/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
+											<img class="glyphicon" src="/partnership-web/resource/images/Star-48.png">
 							 </span>
 						<h4 class="media-heading"><a href="#">Nguyen huy ha</a></h4>
 						<h4>Support</h4>
@@ -147,8 +147,6 @@
 			</div>
 		  </div>
         </div>
-        
-        
 
         
         <hr>
@@ -205,3 +203,5 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
+
+</html>
