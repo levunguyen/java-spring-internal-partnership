@@ -11,7 +11,7 @@ body{
 header{
     margin: 0;
     padding: 1em;
-    overflow: auto;
+/*     overflow: auto; */
 }
 
 header .logo{
@@ -97,7 +97,18 @@ header #header-login #lang #flag:hover:after{
     -moz-transition: all 400ms ease;
     
 }
-
+.avatar-user .btn{	
+	height : 48px;
+}
+.dropdown-menu{
+	width: 100%;
+	left: 50%;
+	right: 50%;
+}
+.dropdown-menu li{
+	text-align: center;
+	padding: 0.1em;
+}
 
 /*Css Content*/
 section{
@@ -699,7 +710,7 @@ label {
     margin-right: 0 !important;
 }  
 
-.row-footer-register {
+.row {
     margin-left: -15px;
     margin-right: -15px;
 }

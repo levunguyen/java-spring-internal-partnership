@@ -58,7 +58,7 @@
 		</div>
 		<div class="suggest-users row" >
 			<c:forEach var="users" items="${usersSuggest}">
-				<div class="mini-profile col-md-6">
+				<div class="mini-profile col-md-6 col-xs-6 col-md-6">
 					<div class="profile-content row">
 						<div class="left-profile col-md-4">
 							<img class="img-pro" alt="ten"
@@ -84,8 +84,8 @@
 							</div>
 							<div class="experience">
 								<h4 style="font-weight: bold;">Experience :</h4>
-								<c:forEach var="experence" items="${users.listBusinesses}">
-									<h4>${experence.experience}</h4>
+								<c:forEach var="experence" items="${users.listBusinesses}">		
+										<h4>${experence.experience}</h4>
 								</c:forEach>
 							</div>
 							<div class="projects-finished">

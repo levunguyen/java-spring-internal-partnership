@@ -9,8 +9,8 @@
 
     <http auto-config="true">
     	<intercept-url pattern="/profile" access="hasRole('ROLE_USER')"/>
-        <!-- <intercept-url pattern="/" access="hasRole('ROLE_USER')"/>
- -->        <form-login login-page="/" default-target-url="/" authentication-failure-url="/login?error" username-parameter="username" password-parameter="password"/>
+<!--         <intercept-url pattern="/" access="hasRole('ROLE_USER')"/> -->
+        <form-login login-page="/" default-target-url="/" authentication-failure-url="/login?error" username-parameter="username" password-parameter="password"/>
         <logout logout-success-url="/" />
     </http>
 
