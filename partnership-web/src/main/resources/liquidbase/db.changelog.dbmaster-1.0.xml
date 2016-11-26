@@ -266,5 +266,28 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"
 		<tagDatabase tag="version_1.0" />
 	</changeSet>
 	
-
+	<changeSet id="ho1" author="hoang">
+	<createTable tableName="rating">
+	<column name="id" type="INT">
+	<constraints primaryKey="true" nullable="false"/>
+	</column>
+	<column name="username" type="varchar(45)"></column>
+	<column name="rate" type="FLOAT"></column>
+	</createTable>
+	</changeSet>
+	<changeSet id="ho2" author="hoang">
+	<addForeignKeyConstraint constraintName="fk_rating_user" referencedTableName="user" baseColumnNames="username" baseTableName="rating" referencedColumnNames="username"/>
+	</changeSet>
+	<changeSet id="ho3" author="hoang">
+	<insert tableName="rating">
+	<column name="id" value="1"></column>
+	<column name="username" value="batcandoi"></column>
+	<column name="rate" value="3.5"></column>
+	</insert>
+	<insert tableName="rating">
+	<column name="id" value="2"></column>
+	<column name="username" value="Havannguyen"></column>
+	<column name="rate" value="0.5"></column>
+	</insert>
+	</changeSet>
 </databaseChangeLog>

@@ -19,6 +19,8 @@ import javax.persistence.Transient;
 import org.hocviencntt.business.model.Business;
 import org.hocviencntt.location.model.Location;
 import org.hocviencntt.project.model.Project;
+import org.hocviencntt.rating.model.Rating;
+
 @Entity
 @Table(name= "user")
 public class User {
@@ -45,10 +47,19 @@ public class User {
 		joinColumns = @JoinColumn(name = "user"),
 		inverseJoinColumns = @JoinColumn(name = "id_role"))		
 	private Set<Role> roles;
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="user")
+	private Set<Rating>ratings;
 	
 	
 	
-	
+	public Set<Rating> getRatings() {
+		return ratings;
+	}
+
+	public void setRatings(Set<Rating> ratings) {
+		this.ratings = ratings;
+	}
+
 	public Set<Project> getProjects() {
 		return projects;
 	}

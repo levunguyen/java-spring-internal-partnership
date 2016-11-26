@@ -40,6 +40,7 @@
         		<value>org.hocviencntt.project.model</value>
         		<value>org.hocviencntt.location.model</value>
         		<value>org.hocviencntt.business.model</value>
+        		<value>org.hocviencntt.rating.model</value>
         	</list>
         </property>
     </bean>	

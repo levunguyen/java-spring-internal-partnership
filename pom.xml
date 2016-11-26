@@ -13,6 +13,8 @@
 		<module>location</module>
 		<module>business</module>
 		<module>model</module>
+<!-- 		<module>rating</module> -->
+		<module>rating</module>
 	</modules>
 
 	<properties>
